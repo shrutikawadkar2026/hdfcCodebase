@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="de"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder"
+    sling:basename="/content/forms/af/reference-fragments/contact-information/jcr:content/guideContainer/assets/dictionary">
+    <fd_abc_x0040_exampl943719455
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_abc@example.com"
+        sling:message="abc@Beispiel.com"/>
+    <fd_Contact_x0020_In891978988
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Contact Information"
+        sling:message="Kontaktinformationen"/>
+    <fd_Contact_x0020_pe-218381768
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Contact person #"
+        sling:message="Nr. der Kontaktperson"/>
+    <fd_Contact_x0020_ty1384072026
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Contact type"
+        sling:message="Kontakttyp"/>
+    <fd_eg_x0025_3A_x0020_123-45-689278157
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_eg: 123-456-7890"
+        sling:message="z. B.: 123-456-7890"/>
+    <fd_Email_x0020_addr1901549392
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Email address"
+        sling:message="E-Mail-Adresse"/>
+    <fd_Home
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Home"
+        sling:message="Startseite"/>
+    <fd_Mobile
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Mobile"
+        sling:message="Mobile"/>
+    <fd_Phone_x0020_numb1426168963
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Phone number should not be more than 10 digits."
+        sling:message="Telefonnummer darf höchstens 10 Stellen lang sein."/>
+    <fd_Phone_x0020_numb868043055
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Phone number*"
+        sling:message="Telefonnummer*"/>
+    <fd_Selection_x0020_-1371625183
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Selection is required"
+        sling:message="Auswahl ist erforderlich."/>
+    <fd_This_x0020_is_x0020_a_x0020_1257895596
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_This is a required field"
+        sling:message="Dieses Feld ist erforderlich."/>
+    <fd_Work
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Work"
+        sling:message="Arbeit"/>
+</jcr:root>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/fd/af/default"
+        cq:deviceGroups="mobile/groups/responsive"
+        cq:template="/libs/fd/af/templateForFragment/defaultFragmentTemplate"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Terms and Conditions with Scribble"
+        sling:resourceType="fd/af/components/page/basePageForFragment">
+        <guideContainer
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="fd/af/components/guideFragmentContainer"
+            guideCss="guideContainer"
+            guideNodeClass="guideContainerNode"
+            name="fragment1">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/layouts/defaultGuideLayout"
+                toolbarPosition="Bottom"/>
+            <rootPanel
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/components/rootPanel"
+                guideNodeClass="rootPanelNode"
+                name="guideRootPanel"
+                panelSetType="Navigable">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                    nonNavigable="true"
+                    toolbarPosition="Bottom"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <guidetermsandconditi
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Please read the terms and conditions and sign to proceed"
+                        sling:resourceType="fd/af/components/guidetermsandconditions"
+                        custom="Terms And Conditions"
+                        guideNodeClass="guideTermsAndConditions"
+                        name="tnc"
+                        textIsRich="[true,true,true]"
+                        tncCheckBoxContent="I accept the terms &amp; conditions"
+                        tncTextContent="&lt;h2>&lt;b>Sample Terms and Conditions&lt;/b>&lt;/h2>&#xd;&#xa;&#xd;&#xa;&lt;p>Last updated: &amp;lt;Last updated date here&amp;gt;&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>Please read the following Terms and Conditions carefully before using the &amp;lt;&lt;a>http://yourcompany.com&lt;/a>&amp;gt; website and mobile application operated by &amp;lt;Your Company Name&amp;gt;.&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>Your access to and use of the Service is subject to your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and other who access or use the Service.&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>&lt;b>By accessing or using the Service you agree to be bound by these Terms. You may not access the Service if you disagree with any term laid down in this document.&lt;/b>&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>&lt;u>Applying for Products and Services&lt;/u>&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>If you wish to apply for a product or service made available through &amp;lt;Your Company Name&amp;gt;, you may be asked to provide personal information relevant to your application.&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>&lt;u>Subscriptions&lt;/u>&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>Part of our Services require users to sign up for newsletters and mailers. You will be notified at the time of sign up for the said subscription services. Newsletters and mailers are sent to the email address(s) you provide.&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>&lt;u>Content&lt;/u>&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>Our Service allows you to upload and store important information such as text and graphics. You are solely responsible for the ownership of any graphics uploaded at &amp;lt;Your Company Name&amp;gt;. &amp;lt;Your Company Name&amp;gt; reserves the right to work with its partners and associates to determine the authenticity of the uploaded graphics.&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>&lt;u>Links to Other Web Sites&lt;/u>&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>Our Service may contain links to third-party websites or services that are not owned or controlled by &amp;lt;Your Company Name&amp;gt;.&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>&amp;lt;Your Company Name&amp;gt; has no control over and assumes no responsibility for the content privacy policies or practices of any third-party websites or services. You further acknowledge and agree that &amp;lt;Your Company Name&amp;gt; shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods, or services available on or through any such websites or services.&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>&lt;u>Changes&lt;/u>&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is &lt;g class=&quot;gr_ gr_43 gr-alert gr_gramm gr_run_anim Grammar multiReplace&quot; data-gr-id=&quot;43&quot;>material&lt;/g>, we will try to provide notice at least 30 days prior to the new terms taking effect. What constitutes a material change will be determined at our sole discretion.&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>&lt;u>Contact Us&lt;/u>&lt;/p>&#xd;&#xa;&#xd;&#xa;&lt;p>If you have any questions about these Terms and Conditions, please contact us.&lt;/p>&#xd;&#xa;&#xd;&#xa;">
+                        <items jcr:primaryType="nt:unstructured">
+                            <reviewDocument
+                                jcr:primaryType="nt:unstructured"
+                                guideNodeClass="guideTextBox"
+                                name="reviewDocument"/>
+                            <reviewStatus
+                                jcr:primaryType="nt:unstructured"
+                                guideNodeClass="guideCheckBox"
+                                name="reviewStatus"/>
+                        </items>
+                    </guidetermsandconditi>
+                    <scribbleSign
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Signature"
+                        sling:resourceType="fd/af/components/guidescribble"
+                        aspectRatio="6.8888"
+                        guideNodeClass="guideScribble"
+                        mandatory="true"
+                        mandatoryMessage="You need to read the terms and conditions and sign before proceeding"
+                        name="scribbleSign"
+                        textIsRich="[true,true]"/>
+                </items>
+            </rootPanel>
+            <assets jcr:primaryType="nt:unstructured">
+                <dictionary jcr:primaryType="nt:unstructured">
+                    <de/>
+                    <fr/>
+                    <es/>
+                </dictionary>
+            </assets>
+        </guideContainer>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <smallScreen
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Decimal}479"/>
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Phone"
+                    width="{Decimal}767"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Decimal}991"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

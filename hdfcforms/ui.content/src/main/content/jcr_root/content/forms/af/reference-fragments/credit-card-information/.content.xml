@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/fd/af/default"
+        cq:deviceGroups="mobile/groups/responsive"
+        cq:template="/libs/fd/af/templateForFragment/defaultFragmentTemplate"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Credit card Information"
+        sling:resourceType="fd/af/components/page/basePageForFragment">
+        <guideContainer
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="fd/af/components/guideFragmentContainer"
+            clientLibRef="customFunctionFragment"
+            guideCss="guideContainer"
+            guideNodeClass="guideContainerNode"
+            name="fragment1">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/layouts/defaultGuideLayout"
+                mobileLayout="fd/af/layouts/mobile/simple"
+                toolbarPosition="Bottom"/>
+            <rootPanel
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/components/rootPanel"
+                guideNodeClass="rootPanelNode"
+                name="guideRootPanel"
+                panelSetType="Navigable">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                    nonNavigable="true"
+                    toolbarPosition="Bottom"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <creditCardMessage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="fd/af/components/guidetextdraw"
+                        _value="&lt;p>Please provide your credit/debit card details&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;/p>&#xd;&#xa;&#xd;&#xa;"
+                        guideNodeClass="guideTextDraw"
+                        name="creditCardMessage"
+                        textIsRich="true"/>
+                    <cardNumber
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Card number*"
+                        sling:resourceType="fd/af/components/guidetextbox"
+                        displayPatternType="custom"
+                        displayPictureClause="text{9999-9999-9999-9999}"
+                        expJson="\{&quot;nodeName&quot;:&quot;RULES&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;ROOT&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;FORM.guideRootPanel.cardNumber&quot;,&quot;type&quot;:&quot;TEXT FIELD|FIELD|AFCOMPONENT|STRING&quot;,&quot;name&quot;:&quot;cardNumber&quot;}},{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;,&quot;value&quot;:null}},{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;,&quot;choice&quot;:null}]},&quot;nested&quot;:false},{&quot;nodeName&quot;:&quot;Then&quot;,&quot;value&quot;:null},{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;,&quot;functionName&quot;:{&quot;id&quot;:&quot;getCardType&quot;,&quot;displayName&quot;:&quot;Identify type of card&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;isDuplicate&quot;:false,&quot;displayPath&quot;:&quot;&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;STRING&quot;,&quot;name&quot;:&quot;number&quot;,&quot;description&quot;:&quot;Credit card number&quot;}],&quot;impl&quot;:&quot;$0($1);&quot;},&quot;params&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;,&quot;value&quot;:{&quot;id&quot;:&quot;FORM.guideRootPanel.cardNumber&quot;,&quot;displayName&quot;:&quot;Card number*&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;displayPath&quot;:&quot;FORM/guideRootPanel/Card number*/&quot;,&quot;name&quot;:&quot;cardNumber&quot;}}}]}}]}]}}],&quot;isValid&quot;:true,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\ngetCardType(this.value);;\\n\\n&quot;,&quot;eventName&quot;:&quot;Value Commit&quot;},{&quot;script&quot;:{&quot;field&quot;:&quot;FORM.guideRootPanel.cardNumber&quot;,&quot;event&quot;:&quot;Validate&quot;,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;},&quot;content&quot;:&quot;this.value.length&lt;=16;&quot;},&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;,&quot;version&quot;:1}]}"
+                        guideNodeClass="guideTextBox"
+                        mandatory="true"
+                        mandatoryMessage="Credit card number is required"
+                        name="cardNumber"
+                        placeholderText="xxxx-xxxx-xxxx-xxxx"
+                        textIsRich="[true,true]"
+                        validateExp="var Validate_1;&#xa;&#xa;try {&#xa;    Validate_1 = eval(&quot;this.value.length&lt;=16;&quot;);&#xa;    &#xa;} catch (e) {&#xa;    /*log here */&#xa;}&#xa;&#xa;Validate_1;"
+                        validateExpMessage="Credit card number is invalid"
+                        validationPatternType="none"
+                        valueCommitScript="&#xa;try {&#xa;    getCardType(this.value);;&#xa;    &#xa;    &#xa;} catch (e) {&#xa;    /*log here */&#xa;}&#xa;"/>
+                    <fullName
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Full name*"
+                        sling:resourceType="fd/af/components/guidetextbox"
+                        displayPatternType="none"
+                        guideNodeClass="guideTextBox"
+                        mandatoryMessage="Name is required"
+                        name="fullName"
+                        placeholderText="Full name"
+                        textIsRich="[true,true]"
+                        validationPatternType="none"/>
+                    <expiryDatePanel
+                        cq:cssClass="guide-1467890045121"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Expiry date*"
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        mandatory="true"
+                        mandatoryMessage="This is a required field"
+                        name="expiryDatePanel"
+                        textIsRich="[true]">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            nonNavigable="true"
+                            toolbarPosition="Bottom"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <expiryDateheader
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>Expiry date*&lt;br>&#xd;&#xa;&lt;/p>&#xd;&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="expiryDateheader"
+                                textIsRich="true"/>
+                            <expiryDateMonth
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Month"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                displayPatternType="none"
+                                guideNodeClass="guideDropDownList"
+                                hideTitle="true"
+                                mandatory="true"
+                                mandatoryMessage="This is a required field"
+                                name="expiryDateMonth"
+                                optionsLoadPath="/etc/designs/aemforms-fragment-commons/creditCardExpiryMonth/creditCardExpiryMonthList"
+                                placeholderText="MM"
+                                textIsRich="[true,true]"
+                                validateExpMessage="Please enter a valid month"
+                                validatePictureClauseMessage="Please enter a valid month">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                    <tablet
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </expiryDateMonth>
+                            <expiryDateYear
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Year"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                guideNodeClass="guideDropDownList"
+                                hideTitle="true"
+                                mandatory="true"
+                                mandatoryMessage="This is a required field"
+                                name="expiryDateYear"
+                                optionsLoadPath="/etc/designs/aemforms-fragment-commons/creditCardExpiryYear/creditCardExpiryYearList"
+                                placeholderText="YY"
+                                textIsRich="[true,true]"
+                                validateExpMessage="Please enter a valid year"
+                                validatePictureClauseMessage="Please enter a valid year">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                    <tablet
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </expiryDateYear>
+                        </items>
+                    </expiryDatePanel>
+                    <cvvNumber
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="CVV*"
+                        sling:resourceType="fd/af/components/guidepasswordbox"
+                        displayPatternType="none"
+                        dorExclusion="true"
+                        expJson="\{&quot;nodeName&quot;:&quot;RULES&quot;,&quot;items&quot;:[{&quot;script&quot;:{&quot;content&quot;:&quot;this.value.length&lt;=4;&quot;,&quot;field&quot;:&quot;FORM.guideRootPanel.cvvNumber&quot;,&quot;event&quot;:&quot;Validate&quot;},&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;,&quot;version&quot;:1}]}"
+                        guideNodeClass="guidePasswordBox"
+                        mandatory="true"
+                        mandatoryMessage="This is a required field"
+                        name="cvvNumber"
+                        placeholderText="***"
+                        textIsRich="[true,true]"
+                        validateExp="var Validate_1;&#xa;&#xa;try {&#xa;    Validate_1 = eval(&quot;this.value.length&lt;=4;&quot;);&#xa;    &#xa;} catch (e) {&#xa;    /*log here */&#xa;}&#xa;&#xa;Validate_1;"
+                        validateExpMessage="CVV number is invalid"
+                        validationPatternType="none"/>
+                </items>
+            </rootPanel>
+            <assets jcr:primaryType="nt:unstructured">
+                <dictionary jcr:primaryType="nt:unstructured">
+                    <de/>
+                    <fr/>
+                    <es/>
+                </dictionary>
+            </assets>
+        </guideContainer>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <smallScreen
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Decimal}479"/>
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Phone"
+                    width="{Decimal}767"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Decimal}991"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

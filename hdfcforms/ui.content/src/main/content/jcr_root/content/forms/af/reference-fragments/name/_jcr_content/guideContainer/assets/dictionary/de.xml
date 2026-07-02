@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="de"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder"
+    sling:basename="/content/forms/af/reference-fragments/name/jcr:content/guideContainer/assets/dictionary">
+    <fd_Dr.
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Dr."
+        sling:message="Dr."/>
+    <fd_First_x0020_name
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_First name"
+        sling:message="Vorname"/>
+    <fd_First_x0020_name-1082161783
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_First name is a required field"
+        sling:message="Vorname ist ein Pflichtfeld."/>
+    <fd_First_x0020_name-831348369
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_First name*"
+        sling:message="Vorname*"/>
+    <fd_Last_x0020_name
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Last name"
+        sling:message="Nachname"/>
+    <fd_Last_x0020_name_x0020_-463849437
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Last name is a required field"
+        sling:message="Nachname ist ein Pflichtfeld."/>
+    <fd_Last_x0020_name_x0025_2A
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Last name*"
+        sling:message="Nachname*"/>
+    <fd_Middle_x0020_nam2030759446
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Middle name"
+        sling:message="Weitere Vornamen"/>
+    <fd_Miss.
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Miss."
+        sling:message="Frau"/>
+    <fd_Mr.
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Mr."
+        sling:message="Herr"/>
+    <fd_Mrs.
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Mrs."
+        sling:message="Frau"/>
+    <fd_Select
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Select"
+        sling:message="Auswählen"/>
+    <fd_Selection_x0020_-1371625183
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Selection is required"
+        sling:message="Auswahl ist erforderlich."/>
+    <fd_Title_x0025_2A
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Title*"
+        sling:message="Anrede*"/>
+</jcr:root>

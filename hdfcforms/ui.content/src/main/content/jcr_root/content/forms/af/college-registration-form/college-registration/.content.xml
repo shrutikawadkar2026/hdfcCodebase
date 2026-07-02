@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:fd="http://www.adobe.com/aemfd/fd/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2026-06-04T17:02:46.183+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/ReferenceEditableTemplates/settings/wcm/templates/blank"
+        jcr:language="en"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="College Registration"
+        sling:resourceType="fd/af/components/page2/aftemplatedpage">
+        <guideContainer
+            fd:version="1.1"
+            jcr:lastModified="{Date}2026-06-04T10:40:00.048+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="fd/af/components/guideContainer"
+            actionType="fd/afaddon/components/actions/fdm"
+            autoSaveStrategyType="fd/fp/components/actions/autosave/timebased"
+            clientLibRef="wknd-events.teaser"
+            disableSwipeGesture="{Boolean}false"
+            dorType="none"
+            enableAsyncSubmission="true"
+            enableFocusOnFirstField="{Boolean}true"
+            enableLayoutLayer="false"
+            fdmEntityPath="/students"
+            guideCss="guideContainer"
+            guideNodeClass="guideContainerNode"
+            name="guide1"
+            schemaRef="/content/dam/formsanddocuments-fdm/college-registration-data-model"
+            schemaType="formdatamodel"
+            textIsRich="true"
+            thankYouMessage="Thank you for submitting the form."
+            thankYouOption="message"
+            themeRef="/content/dam/formsanddocuments-themes/reference-themes/canvas-3-0"
+            useExistingAF="false">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/layouts/defaultGuideLayout"
+                mobileLayout="fd/af/layouts/mobile/step"
+                toolbarPosition="Bottom"/>
+            <rootPanel
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Root Panel"
+                sling:resourceType="fd/af/components/rootPanel"
+                dorExcludeDescription="true"
+                dorExcludeTitle="true"
+                guideNodeClass="rootPanelNode"
+                name="guideRootPanel"
+                panelSetType="Navigable">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                    nonNavigable="{Boolean}true"
+                    toolbarPosition="Bottom"/>
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                    <panel
+                        cq:cssClass="guide-1780378300313"
+                        jcr:created="{Date}2026-06-01T15:00:51.755+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-01T15:01:37.159+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Personal Details"
+                        sling:resourceType="fd/af/components/panel"
+                        cssStyle=".guide-1780378300313 .guideGridFluidLayout{&#xa;background:rgb(237,234,228);&#xa;&#xa;}&#xa;"
+                        guideNodeClass="guidePanel"
+                        name="personalDetails"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidetextbox
+                                jcr:created="{Date}2026-06-01T15:01:46.883+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:42:34.079+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="First Name"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                bindRef="/students/first_name"
+                                css="firstname"
+                                guideNodeClass="guideTextBox"
+                                mandatory="true"
+                                maxChars="20"
+                                minLength="3"
+                                name="firstName"
+                                textIsRich="[true,true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:init="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel.personalDetails.firstName&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;}\,&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.firstname input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    value = value.replace(/[^a-zA-Z]/g\, '');\\n\\n    if(value.length > 0){\\n        value = value.charAt(0).toUpperCase() + value.slice(1);\\n    }\\n\\n    $(this).val(value);\\n   let field = guideBridge.resolveNode(\\&quot;firstname\\&quot;);\\n   if (/[^a-zA-Z ]/.test(value)) {\\n\\n        field.valid = false;\\n        field.errorMessage = \\&quot;Only alphabets and spaces are allowed\\&quot;;\\n\\n    } else {\\n\\n        field.valid = true;\\n    }\\n\\n});&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextbox>
+                            <guidetextbox_copy
+                                jcr:created="{Date}2026-06-01T15:01:46.883+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:42:45.911+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Last Name"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                bindRef="/students/last_name"
+                                css="lastname"
+                                guideNodeClass="guideTextBox"
+                                mandatory="true"
+                                maxChars="20"
+                                minLength="3"
+                                name="lastName"
+                                textIsRich="[true,true,true]">
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.lastname input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    value = value.replace(/[^a-zA-Z]/g\, '');\\n\\n    if(value.length > 0){\\n        value = value.charAt(0).toUpperCase() + value.slice(1);\\n    }\\n\\n    $(this).val(value);\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.personalDetails.lastName&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </guidetextbox_copy>
+                            <guidetextbox_copy_1364776139
+                                jcr:created="{Date}2026-06-01T15:01:46.883+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:43:00.885+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Mobile Number"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                bindRef="/students/mobile"
+                                css="mobilenumber"
+                                guideNodeClass="guideTextBox"
+                                length="10"
+                                mandatory="true"
+                                name="mobileNumber"
+                                textIsRich="[true,true,true]">
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.mobileNumber input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    value = value.replace(/\\\\D/g\, '');\\n\\n    value = value.substring(0\, 10);\\n\\n    $(this).val(value);\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.personalDetails.mobileNumber&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="12"/>
+                                </cq:responsive>
+                            </guidetextbox_copy_1364776139>
+                            <guideemail
+                                jcr:created="{Date}2026-06-01T15:03:52.370+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:43:09.918+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Email Id"
+                                sling:resourceType="fd/af/components/guideemail"
+                                autofillFieldKeyword="email"
+                                bindRef="/students/email"
+                                guideNodeClass="guideTextBox"
+                                mandatory="true"
+                                name="emailId"
+                                textIsRich="[true,true]"
+                                validatePictureClause="^(([^&lt;>()\\[\\]\\\\.,;:\\s@&quot;]+(\\.[^&lt;>()\\[\\]\\\\.,;:\\s@&quot;]+)*)|(&quot;.+&quot;))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$"
+                                validationPatternType="custom">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="12"/>
+                                </cq:responsive>
+                            </guideemail>
+                            <guidetextbox_1701189867
+                                jcr:created="{Date}2026-06-01T15:04:54.140+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T12:14:22.732+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Address Line 1"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                bindRef="/students/address_line1"
+                                css="addressLine1"
+                                guideNodeClass="guideTextBox"
+                                mandatory="true"
+                                minLength="10"
+                                name="addressLine1"
+                                textIsRich="[true,true,true]">
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.addressLine1 input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    if (value.length >= 30) {\\n        $(\\&quot;.addressLine2 input\\&quot;).focus();\\n    }\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.personalDetails.addressLine1&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextbox_1701189867>
+                            <guidetextbox_1701189
+                                jcr:created="{Date}2026-06-01T15:04:54.140+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T12:14:35.465+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Address Line 2"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                bindRef="/students/address_line2"
+                                css="addressLine2"
+                                guideNodeClass="guideTextBox"
+                                maxChars="30"
+                                name="addressLine2"
+                                textIsRich="[true,true,true]">
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.addressLine2 input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    if (value.length >= 30) {\\n        $(\\&quot;.addressLine3 input\\&quot;).focus();\\n    }\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.personalDetails.addressLine2&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextbox_1701189>
+                            <guidetextbox_1701189_1292798415
+                                jcr:created="{Date}2026-06-01T15:04:54.140+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T12:14:51.118+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Address Line 3"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                bindRef="/students/address_line3"
+                                css="addressLine3"
+                                guideNodeClass="guideTextBox"
+                                maxChars="30"
+                                name="addressLine3"
+                                textIsRich="[true,true,true]">
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.addressLine3 input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    if (value.length > 30) {\\n\\n        this.setCustomValidity(\\&quot;Address cannot exceed 90 characters.\\&quot;);\\n        this.reportValidity();\\n\\n    } else {\\n\\n        this.setCustomValidity(\\&quot;\\&quot;);\\n\\n    }\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.personalDetails.addressLine3&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextbox_1701189_1292798415>
+                            <guidetextbox_1614766606
+                                jcr:created="{Date}2026-06-01T15:06:24.746+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T12:15:04.090+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Pincode"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                bindRef="/students/pincode"
+                                css="pincode"
+                                displayIsSameAsValidate="true"
+                                displayPatternType="custom"
+                                displayPictureClause="^[0-9]{6}$"
+                                guideNodeClass="guideTextBox"
+                                length="6"
+                                mandatory="true"
+                                name="pincode"
+                                textIsRich="[true,true,true]"
+                                validatePictureClause="text{99999}">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:valueCommit="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel.personalDetails.pincode&quot;\,&quot;event&quot;:&quot;Value Commit&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;}\,&quot;content&quot;:&quot;var pincode = this.value;\\n\\nif (pincode &amp;&amp; pincode.length === 6) {\\n\\n    fetch(\\&quot;/content/pincode?pincode=\\&quot; + pincode)\\n        .then(function(response) {\\n            return response.json();\\n        })\\n        .then(function(data) {\\n\\n            console.log(data);\\n\\n            if (data.success) {\\n\\n                guideBridge.resolveNode(\\&quot;city\\&quot;).value = data.city;\\n                guideBridge.resolveNode(\\&quot;state\\&quot;).value = data.state;\\n\\n            } else {\\n\\n                guideBridge.resolveNode(\\&quot;city\\&quot;).value = \\&quot;\\&quot;;\\n                guideBridge.resolveNode(\\&quot;state\\&quot;).value = \\&quot;\\&quot;;\\n            }\\n\\n        })\\n        .catch(function(error) {\\n            console.log(error);\\n        });\\n}&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:false},{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.pincode input\\&quot;\, function () {\\n\\n    let pincode = this.value;\\n\\n    if (pincode.length !== 6) return;\\n\\n    fetch(\\&quot;https://api.jsonbin.io/v3/qs/6a1eb21fda38895dfe7af709\\&quot;)\\n        .then(res => res.json())\\n        .then(data => {\\n\\n            let records = data.record || [];\\n\\n            let match = records.find(item => item.pincode === pincode);\\n\\n            let cityNode = guideBridge.resolveNode(\\&quot;city\\&quot;);\\n            let stateNode = guideBridge.resolveNode(\\&quot;state\\&quot;);\\n\\n            if (match) {\\n\\n                \\n                if (cityNode) cityNode.value = match.city;\\n                if (stateNode) stateNode.value = match.state;\\n\\n            \\n                if (cityNode) cityNode.enabled = false;\\n                if (stateNode) stateNode.enabled = false;\\n\\n                setTimeout(() => {\\n\\n                    let cityInput = document.querySelector(\\&quot;.city input\\&quot;);\\n                    let stateInput = document.querySelector(\\&quot;.state input\\&quot;);\\n\\n                    if (cityInput) {\\n                        cityInput.setAttribute(\\&quot;readonly\\&quot;\, true);\\n                        cityInput.style.backgroundColor = \\&quot;#f2f2f2\\&quot;;\\n                    }\\n\\n                    if (stateInput) {\\n                        stateInput.setAttribute(\\&quot;readonly\\&quot;\, true);\\n                        stateInput.style.backgroundColor = \\&quot;#f2f2f2\\&quot;;\\n                    }\\n\\n                }\, 50);\\n\\n            } else {\\n\\n                if (cityNode) {\\n                    cityNode.value = \\&quot;\\&quot;;\\n                    cityNode.enabled = true;\\n                }\\n\\n                if (stateNode) {\\n                    stateNode.value = \\&quot;\\&quot;;\\n                    stateNode.enabled = true;\\n                }\\n\\n                setTimeout(() => {\\n\\n                    let cityInput = document.querySelector(\\&quot;.city input\\&quot;);\\n                    let stateInput = document.querySelector(\\&quot;.state input\\&quot;);\\n\\n                    if (cityInput) {\\n                        cityInput.removeAttribute(\\&quot;readonly\\&quot;);\\n                        cityInput.style.backgroundColor = \\&quot;\\&quot;;\\n                    }\\n\\n                    if (stateInput) {\\n                        stateInput.removeAttribute(\\&quot;readonly\\&quot;);\\n                        stateInput.style.backgroundColor = \\&quot;\\&quot;;\\n                    }\\n\\n                }\, 50);\\n            }\\n\\n        });\\n\\n});&quot;\,&quot;event&quot;:&quot;Value Commit&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.personalDetails.pincode&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidetextbox_1614766606>
+                            <guidetextbox_1195341494
+                                jcr:created="{Date}2026-06-01T15:06:46.058+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:44:03.981+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="City"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                bindRef="/students/city"
+                                css="city"
+                                guideNodeClass="guideTextBox"
+                                mandatory="true"
+                                maxChars="20"
+                                name="city"
+                                textIsRich="[true,true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="6"/>
+                                </cq:responsive>
+                            </guidetextbox_1195341494>
+                            <guidetextbox_763946282
+                                jcr:created="{Date}2026-06-01T15:07:10.114+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:44:20.061+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="State"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                bindRef="/students/state"
+                                css="state"
+                                guideNodeClass="guideTextBox"
+                                mandatory="true"
+                                maxChars="20"
+                                name="state"
+                                textIsRich="[true,true,true]"/>
+                        </items>
+                        <toolbar
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Toolbar"
+                            sling:resourceType="fd/af/components/toolbar"
+                            css=""
+                            guideNodeClass="guideToolbar"
+                            name="toolbar">
+                            <items
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/layouts/toolbar/defaultToolbarLayout"/>
+                            <layout
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/layouts/toolbar/defaultToolbarLayout"/>
+                        </toolbar>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_responsivepanel
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[background:rgb(237\,234\,228)]"
+                                default_x0023_default_x0023_ui="[backgroundColor:rgb(237\,234\,228)]"/>
+                        </style>
+                    </panel>
+                    <panel_844022599
+                        jcr:created="{Date}2026-06-01T17:04:38.404+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-01T17:05:23.574+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Academic Details"
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        name="academicDetails"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidetextbox
+                                jcr:created="{Date}2026-06-02T10:37:37.019+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-02T10:37:53.452+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="greeting"
+                                textIsRich="[true,true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="12"/>
+                                </cq:responsive>
+                                <fd:rules
+                                    fd:calc="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CALC_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;VALUE_FIELD&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.greeting&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;greeting&quot;}}\,{&quot;nodeName&quot;:&quot;to&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BINARY_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;Hi        &quot;}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;PLUS&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.personalDetails.firstName&quot;\,&quot;displayName&quot;:&quot;First Name&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Personal Details/First Name/&quot;\,&quot;name&quot;:&quot;firstName&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.personalDetails&quot;}}}]}}\,{&quot;nodeName&quot;:&quot;When&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;CONDITIONORALWAYS&quot;\,&quot;choice&quot;:null}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nguidelib.util.GuideUtil._addValues(\\&quot;Hi        \\&quot;\, firstName.value ) ;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Calculate&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts jcr:primaryType="nt:unstructured"/>
+                            </guidetextbox>
+                            <guidetextdraw
+                                jcr:created="{Date}2026-06-02T10:47:09.108+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-02T13:09:52.142+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>Please enter your academic details.&lt;/p>&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="detailText"
+                                textIsRich="true"/>
+                            <guidetextdraw_56723295
+                                jcr:created="{Date}2026-06-01T17:21:54.748+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-01T17:24:43.110+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>English&lt;/p>&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="english"
+                                textIsRich="true">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="4"/>
+                                </cq:responsive>
+                            </guidetextdraw_56723295>
+                            <guidenumericbox
+                                jcr:created="{Date}2026-06-01T17:22:20.714+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:44:38.340+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Marks (Out of 100)"
+                                sling:resourceType="fd/af/components/guidenumericbox"
+                                bindRef="/students/english_marks"
+                                guideNodeClass="guideNumericBox"
+                                leadDigits="3"
+                                mandatory="true"
+                                maximum="100"
+                                minimum="0"
+                                name="englishMarks"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="2"
+                                        width="6"/>
+                                </cq:responsive>
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:valueCommit="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel.academicDetails.englishMarks&quot;\,&quot;event&quot;:&quot;Value Commit&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;}\,&quot;content&quot;:&quot;try {\\n\\n    var english = guideBridge.resolveNode(\\&quot;englishMarks\\&quot;).value;\\n\\n    alert(\\&quot;English = \\&quot; + english);\\n\\n    guideBridge.resolveNode(\\&quot;grandTotal\\&quot;).value = english;\\n\\n    alert(\\&quot;Grand Total Updated\\&quot;);\\n\\n} catch(e) {\\n\\n    alert(\\&quot;Error = \\&quot; + e);\\n\\n}&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:false}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidenumericbox>
+                            <guidetextdraw_567232
+                                jcr:created="{Date}2026-06-01T17:21:54.748+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-01T17:26:10.618+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>Maths&lt;/p>&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="maths"
+                                textIsRich="true">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="4"/>
+                                </cq:responsive>
+                            </guidetextdraw_567232>
+                            <guidenumericbox_copy
+                                jcr:created="{Date}2026-06-01T17:22:20.714+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:44:50.448+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Marks (Out of 100)"
+                                sling:resourceType="fd/af/components/guidenumericbox"
+                                bindRef="/students/maths_marks"
+                                guideNodeClass="guideNumericBox"
+                                leadDigits="3"
+                                mandatory="true"
+                                maximum="100"
+                                minimum="0"
+                                name="mathsMarks"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="2"
+                                        width="6"/>
+                                </cq:responsive>
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:valueCommit="[{&quot;script&quot;:{&quot;content&quot;:&quot;var english = Number(guideBridge.resolveNode(\\&quot;englishMarks\\&quot;).value) || 0;\\nvar maths = Number(guideBridge.resolveNode(\\&quot;mathsMarks\\&quot;).value) || 0;\\nvar physics = Number(guideBridge.resolveNode(\\&quot;physicsMarks\\&quot;).value) || 0;\\nvar chemistry = Number(guideBridge.resolveNode(\\&quot;chemistryMarks\\&quot;).value) || 0;\\nvar biology = Number(guideBridge.resolveNode(\\&quot;biologyMarks\\&quot;).value) || 0;\\n\\nvar total = english + maths + physics + chemistry + biology;\\n\\nguideBridge.resolveNode(\\&quot;grandTotal\\&quot;).value = total;\\n\\nvar percentage = (total / 500) * 100;\\n\\nguideBridge.resolveNode(\\&quot;percentage\\&quot;).value =\\n    percentage.toFixed(2);\\n\\nif (percentage >= 70) {\\n    guideBridge.resolveNode(\\&quot;eligibility\\&quot;).value =\\n        \\&quot;Eligible\\&quot;;\\n} else {\\n    guideBridge.resolveNode(\\&quot;eligibility\\&quot;).value =\\n        \\&quot;Not Eligible\\&quot;;\\n}&quot;\,&quot;event&quot;:&quot;Value Commit&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.academicDetails.mathsMarks&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:false}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidenumericbox_copy>
+                            <guidetextdraw_567232_883034804
+                                jcr:created="{Date}2026-06-01T17:21:54.748+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-01T17:26:56.520+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>Physics&lt;/p>&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="english_copy_1_copy_1"
+                                textIsRich="true">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="4"/>
+                                </cq:responsive>
+                            </guidetextdraw_567232_883034804>
+                            <guidenumericbox_copy_998233656
+                                jcr:created="{Date}2026-06-01T17:22:20.714+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:45:01.998+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Marks (Out of 100)"
+                                sling:resourceType="fd/af/components/guidenumericbox"
+                                bindRef="/students/physics_marks"
+                                guideNodeClass="guideNumericBox"
+                                leadDigits="3"
+                                mandatory="true"
+                                maximum="100"
+                                minimum="0"
+                                name="physicsmarks"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="2"
+                                        width="6"/>
+                                </cq:responsive>
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:valueCommit="[{&quot;script&quot;:{&quot;content&quot;:&quot;var english = Number(guideBridge.resolveNode(\\&quot;englishMarks\\&quot;).value) || 0;\\nvar maths = Number(guideBridge.resolveNode(\\&quot;mathsMarks\\&quot;).value) || 0;\\nvar physics = Number(guideBridge.resolveNode(\\&quot;physicsMarks\\&quot;).value) || 0;\\nvar chemistry = Number(guideBridge.resolveNode(\\&quot;chemistryMarks\\&quot;).value) || 0;\\nvar biology = Number(guideBridge.resolveNode(\\&quot;biologyMarks\\&quot;).value) || 0;\\n\\nvar total = english + maths + physics + chemistry + biology;\\n\\nguideBridge.resolveNode(\\&quot;grandTotal\\&quot;).value = total;\\n\\nvar percentage = (total / 500) * 100;\\n\\nguideBridge.resolveNode(\\&quot;percentage\\&quot;).value =\\n    percentage.toFixed(2);\\n\\nif (percentage >= 70) {\\n    guideBridge.resolveNode(\\&quot;eligibility\\&quot;).value =\\n        \\&quot;Eligible\\&quot;;\\n} else {\\n    guideBridge.resolveNode(\\&quot;eligibility\\&quot;).value =\\n        \\&quot;Not Eligible\\&quot;;\\n}&quot;\,&quot;event&quot;:&quot;Value Commit&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.academicDetails.physicsmarks&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:false}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidenumericbox_copy_998233656>
+                            <guidetextdraw_567232_2100430961
+                                jcr:created="{Date}2026-06-01T17:21:54.748+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-01T17:27:37.040+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>Chemistry&lt;/p>&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="chemistry"
+                                textIsRich="true">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="4"/>
+                                </cq:responsive>
+                            </guidetextdraw_567232_2100430961>
+                            <guidenumericbox_copy_790774630
+                                jcr:created="{Date}2026-06-01T17:22:20.714+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:45:15.484+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Marks (Out of 100)"
+                                sling:resourceType="fd/af/components/guidenumericbox"
+                                bindRef="/students/chemistry_marks"
+                                guideNodeClass="guideNumericBox"
+                                leadDigits="3"
+                                mandatory="true"
+                                maximum="100"
+                                minimum="0"
+                                name="chemistryMarks"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="2"
+                                        width="6"/>
+                                </cq:responsive>
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:valueCommit="[{&quot;script&quot;:{&quot;content&quot;:&quot;var english = Number(guideBridge.resolveNode(\\&quot;englishMarks\\&quot;).value) || 0;\\nvar maths = Number(guideBridge.resolveNode(\\&quot;mathsMarks\\&quot;).value) || 0;\\nvar physics = Number(guideBridge.resolveNode(\\&quot;physicsMarks\\&quot;).value) || 0;\\nvar chemistry = Number(guideBridge.resolveNode(\\&quot;chemistryMarks\\&quot;).value) || 0;\\nvar biology = Number(guideBridge.resolveNode(\\&quot;biologyMarks\\&quot;).value) || 0;\\n\\nvar total = english + maths + physics + chemistry + biology;\\n\\nguideBridge.resolveNode(\\&quot;grandTotal\\&quot;).value = total;\\n\\nvar percentage = (total / 500) * 100;\\n\\nguideBridge.resolveNode(\\&quot;percentage\\&quot;).value =\\n    percentage.toFixed(2);\\n\\nif (percentage >= 70) {\\n    guideBridge.resolveNode(\\&quot;eligibility\\&quot;).value =\\n        \\&quot;Eligible\\&quot;;\\n} else {\\n    guideBridge.resolveNode(\\&quot;eligibility\\&quot;).value =\\n        \\&quot;Not Eligible\\&quot;;\\n}&quot;\,&quot;event&quot;:&quot;Value Commit&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.academicDetails.chemistryMarks&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:false}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidenumericbox_copy_790774630>
+                            <guidetextdraw_567232_545842306
+                                jcr:created="{Date}2026-06-01T17:21:54.748+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-01T17:28:21.260+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>Biology&lt;/p>&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="biology"
+                                textIsRich="true">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="4"/>
+                                </cq:responsive>
+                            </guidetextdraw_567232_545842306>
+                            <guidenumericbox_copy_666571377
+                                jcr:created="{Date}2026-06-01T17:22:20.714+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:45:32.058+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Marks (Out of 100)"
+                                sling:resourceType="fd/af/components/guidenumericbox"
+                                bindRef="/students/biology_marks"
+                                guideNodeClass="guideNumericBox"
+                                leadDigits="3"
+                                mandatory="true"
+                                maximum="100"
+                                minimum="0"
+                                name="biologyMarks"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="2"
+                                        width="6"/>
+                                </cq:responsive>
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:valueCommit="[{&quot;script&quot;:{&quot;content&quot;:&quot;var english = Number(guideBridge.resolveNode(\\&quot;englishMarks\\&quot;).value) || 0;\\nvar maths = Number(guideBridge.resolveNode(\\&quot;mathsMarks\\&quot;).value) || 0;\\nvar physics = Number(guideBridge.resolveNode(\\&quot;physicsMarks\\&quot;).value) || 0;\\nvar chemistry = Number(guideBridge.resolveNode(\\&quot;chemistryMarks\\&quot;).value) || 0;\\nvar biology = Number(guideBridge.resolveNode(\\&quot;biologyMarks\\&quot;).value) || 0;\\n\\nvar total = english + maths + physics + chemistry + biology;\\n\\nguideBridge.resolveNode(\\&quot;grandTotal\\&quot;).value = total;\\n\\nvar percentage = (total / 500) * 100;\\n\\nguideBridge.resolveNode(\\&quot;percentage\\&quot;).value =\\n    percentage.toFixed(2);\\n\\nif (percentage >= 70) {\\n    guideBridge.resolveNode(\\&quot;eligibility\\&quot;).value =\\n        \\&quot;Eligible\\&quot;;\\n} else {\\n    guideBridge.resolveNode(\\&quot;eligibility\\&quot;).value =\\n        \\&quot;Not Eligible\\&quot;;\\n}&quot;\,&quot;event&quot;:&quot;Value Commit&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.academicDetails.biologyMarks&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:false}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidenumericbox_copy_666571377>
+                            <panel
+                                jcr:created="{Date}2026-06-01T17:30:30.913+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-01T17:30:48.292+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Result Section"
+                                sling:resourceType="fd/af/components/panel"
+                                guideNodeClass="guidePanel"
+                                name="resultSection"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                    columns="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                                    <guidenumericbox
+                                        jcr:created="{Date}2026-06-01T17:33:05.593+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-03T11:46:14.195+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Grand Total"
+                                        sling:resourceType="fd/af/components/guidenumericbox"
+                                        bindRef="/students/grand_total"
+                                        guideNodeClass="guideNumericBox"
+                                        name="grandTotal"
+                                        textIsRich="[true,true]">
+                                        <fd:rules
+                                            fd:calc="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CALC_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;VALUE_FIELD&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.resultSection.grandTotal&quot;\,&quot;type&quot;:&quot;NUMBER&quot;\,&quot;name&quot;:&quot;grandTotal&quot;}}\,{&quot;nodeName&quot;:&quot;to&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BINARY_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BINARY_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BINARY_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BINARY_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.englishMarks&quot;\,&quot;displayName&quot;:&quot;Marks (Out of 100)&quot;\,&quot;type&quot;:&quot;NUMBER&quot;\,&quot;isDuplicate&quot;:true\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Academic Details/Marks (Out of 100)/&quot;\,&quot;name&quot;:&quot;englishMarks&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.academicDetails&quot;}}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;PLUS&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.mathsMarks&quot;\,&quot;displayName&quot;:&quot;Marks (Out of 100)&quot;\,&quot;type&quot;:&quot;NUMBER&quot;\,&quot;isDuplicate&quot;:true\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Academic Details/Marks (Out of 100)/&quot;\,&quot;name&quot;:&quot;mathsMarks&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.academicDetails&quot;}}}]}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;PLUS&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.physicsmarks&quot;\,&quot;displayName&quot;:&quot;Marks (Out of 100)&quot;\,&quot;type&quot;:&quot;NUMBER&quot;\,&quot;isDuplicate&quot;:true\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Academic Details/Marks (Out of 100)/&quot;\,&quot;name&quot;:&quot;physicsmarks&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.academicDetails&quot;}}}]}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;PLUS&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.chemistryMarks&quot;\,&quot;displayName&quot;:&quot;Marks (Out of 100)&quot;\,&quot;type&quot;:&quot;NUMBER&quot;\,&quot;isDuplicate&quot;:true\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Academic Details/Marks (Out of 100)/&quot;\,&quot;name&quot;:&quot;chemistryMarks&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.academicDetails&quot;}}}]}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;PLUS&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.biologyMarks&quot;\,&quot;displayName&quot;:&quot;Marks (Out of 100)&quot;\,&quot;type&quot;:&quot;NUMBER&quot;\,&quot;isDuplicate&quot;:true\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Academic Details/Marks (Out of 100)/&quot;\,&quot;name&quot;:&quot;biologyMarks&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.academicDetails&quot;}}}]}}\,{&quot;nodeName&quot;:&quot;When&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;CONDITIONORALWAYS&quot;\,&quot;choice&quot;:null}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nguidelib.util.GuideUtil._addValues(guidelib.util.GuideUtil._addValues(guidelib.util.GuideUtil._addValues(guidelib.util.GuideUtil._addValues(englishMarks.value\, mathsMarks.value ) \, physicsmarks.value ) \, chemistryMarks.value ) \, biologyMarks.value ) ;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Calculate&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts jcr:primaryType="nt:unstructured"/>
+                                    </guidenumericbox>
+                                    <guidenumericbox_1336307834
+                                        jcr:created="{Date}2026-06-01T17:33:50.656+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-03T11:46:27.173+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Percentage"
+                                        sling:resourceType="fd/af/components/guidenumericbox"
+                                        bindRef="/students/percentage"
+                                        guideNodeClass="guideNumericBox"
+                                        name="percentage"
+                                        textIsRich="[true,true]">
+                                        <fd:rules
+                                            fd:calc="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CALC_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;VALUE_FIELD&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.resultSection.percentage&quot;\,&quot;type&quot;:&quot;NUMBER&quot;\,&quot;name&quot;:&quot;percentage&quot;}}\,{&quot;nodeName&quot;:&quot;to&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BINARY_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BINARY_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.resultSection.grandTotal&quot;\,&quot;displayName&quot;:&quot;Grand Total&quot;\,&quot;type&quot;:&quot;NUMBER&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Academic Details/Result Section/Grand Total/&quot;\,&quot;name&quot;:&quot;grandTotal&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.academicDetails.resultSection&quot;}}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;DIVIDE&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;NUMERIC_LITERAL&quot;\,&quot;value&quot;:&quot;500&quot;}}]}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;MULTIPLY&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;NUMERIC_LITERAL&quot;\,&quot;value&quot;:&quot;100&quot;}}]}}\,{&quot;nodeName&quot;:&quot;When&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;CONDITIONORALWAYS&quot;\,&quot;choice&quot;:null}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\n (  ( grandTotal.value / 500 )  * 100 ) ;\\n\\n&quot;\,&quot;eventName&quot;:&quot;Calculate&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts jcr:primaryType="nt:unstructured"/>
+                                    </guidenumericbox_1336307834>
+                                    <guidetextbox
+                                        jcr:created="{Date}2026-06-01T17:34:21.746+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-03T11:46:39.356+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Eligibility"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/students/eligibility"
+                                        guideNodeClass="guideTextBox"
+                                        name="eligibility"
+                                        textIsRich="[true,true,true]">
+                                        <fd:rules
+                                            fd:calc="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CALC_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;VALUE_FIELD&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.resultSection.eligibility&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;eligibility&quot;}}\,{&quot;nodeName&quot;:&quot;to&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;Eligible&quot;}}\,{&quot;nodeName&quot;:&quot;When&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;CONDITIONORALWAYS&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.resultSection.percentage&quot;\,&quot;displayName&quot;:&quot;Percentage&quot;\,&quot;type&quot;:&quot;NUMBER&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Academic Details/Result Section/Percentage/&quot;\,&quot;name&quot;:&quot;percentage&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.academicDetails.resultSection&quot;}}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;GREATER_THAN&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;NUMERIC_LITERAL&quot;\,&quot;value&quot;:&quot;70&quot;}}]}}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nif (percentage.value > 70) {\\n\\&quot;Eligible\\&quot;;\\n\\n}\\n\\n&quot;\,&quot;eventName&quot;:&quot;Calculate&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;CALC_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;VALUE_FIELD&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.resultSection.eligibility&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;eligibility&quot;}}\,{&quot;nodeName&quot;:&quot;to&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;Not Eligible&quot;}}\,{&quot;nodeName&quot;:&quot;When&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;CONDITIONORALWAYS&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPARISON_EXPRESSION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.academicDetails.resultSection.percentage&quot;\,&quot;displayName&quot;:&quot;Percentage&quot;\,&quot;type&quot;:&quot;NUMBER&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Academic Details/Result Section/Percentage/&quot;\,&quot;name&quot;:&quot;percentage&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.academicDetails.resultSection&quot;}}}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;LESS_THAN&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;NUMERIC_LITERAL&quot;\,&quot;value&quot;:&quot;71&quot;}}]}}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nif (percentage.value &lt; 71) {\\n\\&quot;Not Eligible\\&quot;;\\n\\n}\\n\\n&quot;\,&quot;eventName&quot;:&quot;Calculate&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts jcr:primaryType="nt:unstructured"/>
+                                    </guidetextbox>
+                                </items>
+                            </panel>
+                        </items>
+                    </panel_844022599>
+                    <panel_1160351877
+                        jcr:created="{Date}2026-06-02T10:57:04.581+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-02T10:57:42.755+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Club"
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        name="clubDetails"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidedropdownlist
+                                jcr:created="{Date}2026-06-02T10:57:49.339+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:46:58.312+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Club"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                bindRef="/students/club"
+                                guideNodeClass="guideDropDownList"
+                                name="club"
+                                options="[Sports Club,Arts Club,Musical Club]"
+                                textIsRich="[true,true]">
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;change\\&quot;\, \\&quot;.club select\\&quot;\, function () {\\n\\n    $(\\&quot;.activities\\&quot;).empty();   // clear old checkboxes before AJAX\\n\\n    var club = $(this).val();\\n\\n    $.ajax({\\n        url: \\&quot;/content/club.json\\&quot;\,\\n        type: \\&quot;GET\\&quot;\,\\n        data: { club: club }\,\\n        success: function (response) {\\n\\n            var activities = response.activities || [];\\n            var container = $(\\&quot;.activities\\&quot;);\\n\\n            container.empty();\\n\\n            activities.forEach(function (item\, index) {\\n\\n                container.append(\\n                    '&lt;div>' +\\n                    '&lt;input type=\\&quot;checkbox\\&quot; name=\\&quot;activities\\&quot; value=\\&quot;' + item + '\\&quot; id=\\&quot;act_' + index + '\\&quot;>' +\\n                    '&lt;label for=\\&quot;act_' + index + '\\&quot;>' + item + '&lt;/label>' +\\n                    '&lt;/div>'\\n                );\\n\\n            });\\n\\n        }\\n    });\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.clubDetails.club&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true},{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;change\\&quot;\, \\&quot;.club select\\&quot;\, function () {\\n\\n    let club = $(this).val();\\n\\n    if (!club) return;\\n\\n    fetch(\\&quot;/bin/club?club=\\&quot; + encodeURIComponent(club))\\n        .then(response => response.json())\\n        .then(data => {\\n\\n            console.log(\\&quot;CF RESPONSE:\\&quot;\, data);\\n\\n            let container = document.querySelector(\\&quot;.activities-container\\&quot;);\\n\\n            if (!container) {\\n                console.log(\\&quot;activities-container not found\\&quot;);\\n                return;\\n            }\\n\\n            container.innerHTML = \\&quot;\\&quot;;\\n\\n            let activities = data.activities;\\n\\n            if (!activities || activities.length === 0) {\\n                container.innerHTML = \\&quot;&lt;p>No activities found&lt;/p>\\&quot;;\\n                return;\\n            }\\n\\n            activities.forEach((activity\, index) => {\\n\\n                let id = \\&quot;activity_\\&quot; + index;\\n\\n                let checkboxHTML = `\\n                    &lt;div class=\\&quot;activity-item\\&quot;>\\n                        &lt;input type=\\&quot;checkbox\\&quot;\\n                               id=\\&quot;${id}\\&quot;\\n                               name=\\&quot;activities\\&quot;\\n                               value=\\&quot;${activity}\\&quot;>\\n                        &lt;label for=\\&quot;${id}\\&quot;>${activity}&lt;/label>\\n                    &lt;/div>\\n                `;\\n\\n                container.innerHTML += checkboxHTML;\\n            });\\n\\n        })\\n        .catch(error => {\\n            console.log(\\&quot;Error fetching CF data:\\&quot;\, error);\\n\\n            let container = document.querySelector(\\&quot;.activities-container\\&quot;);\\n            if (container) {\\n                container.innerHTML = \\&quot;&lt;p>Error loading activities&lt;/p>\\&quot;;\\n            }\\n        });\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.clubDetails.club&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:false}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidedropdownlist>
+                            <guidecheckbox
+                                jcr:created="{Date}2026-06-02T10:59:17.988+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:47:12.487+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Activities"
+                                sling:resourceType="fd/af/components/guidecheckbox"
+                                alignment="guideFieldHorizontalAlignment"
+                                bindRef="/students/activities"
+                                guideNodeClass="guideCheckBox"
+                                name="activities"
+                                options="[0=Item 1]"
+                                textIsRich="[true,true]">
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:valueCommit="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel.clubDetails.activities&quot;\,&quot;event&quot;:&quot;Value Commit&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;}\,&quot;content&quot;:&quot;$(document).on(\\&quot;change\\&quot;\, \\&quot;.club select\\&quot;\, function () {\\n\\n    var club = $(this).val();\\n\\n    $.ajax({\\n        url: \\&quot;/content/clubLookup.json\\&quot;\,\\n        type: \\&quot;GET\\&quot;\,\\n        data: {\\n            club: club\\n        }\,\\n        success: function(response) {\\n\\n            console.log(\\&quot;Activities:\\&quot;\, response.activities);\\n\\n        }\,\\n        error: function(error) {\\n            console.log(error);\\n        }\\n    });\\n});&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:false}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidecheckbox>
+                        </items>
+                    </panel_1160351877>
+                    <panel_113705055
+                        jcr:created="{Date}2026-06-02T14:48:37.222+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-02T14:49:03.089+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Login"
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        name="login"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guideemail
+                                jcr:created="{Date}2026-06-02T14:49:15.811+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T11:47:42.000+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Email"
+                                sling:resourceType="fd/af/components/guideemail"
+                                autofillFieldKeyword="email"
+                                bindRef="/students/email"
+                                guideNodeClass="guideTextBox"
+                                name="email"
+                                textIsRich="[true,true]"
+                                validatePictureClause="^(([^&lt;>()\\[\\]\\\\.,;:\\s@&quot;]+(\\.[^&lt;>()\\[\\]\\\\.,;:\\s@&quot;]+)*)|(&quot;.+&quot;))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$"
+                                validationPatternType="custom">
+                                <fd:rules jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:valueCommit="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel.login.email&quot;\,&quot;event&quot;:&quot;Value Commit&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;}\,&quot;content&quot;:&quot;guideBridge.resolveNode(\\&quot;otp\\&quot;).visible = false;\\nguideBridge.resolveNode(\\&quot;verifyBtn\\&quot;).visible = false;&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:false}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guideemail>
+                            <guidenumericbox
+                                jcr:created="{Date}2026-06-02T14:51:46.142+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-04T17:02:46.176+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="otp"
+                                sling:resourceType="fd/af/components/guidenumericbox"
+                                displayIsSameAsValidate="true"
+                                displayPatternType="custom"
+                                displayPictureClause="^[0-9]{6}$"
+                                guideNodeClass="guideNumericBox"
+                                leadDigits="6"
+                                name="otp"
+                                textIsRich="[true,true]"/>
+                            <guidebutton
+                                jcr:created="{Date}2026-06-02T14:54:24.621+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-02T14:56:07.613+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Generate Otp"
+                                sling:resourceType="fd/af/components/actions/submit"
+                                dorExclusion="true"
+                                guideNodeClass="guideButton"
+                                name="generateOtp"
+                                textIsRich="[true,true]"
+                                type="Button">
+                                <fd:rules
+                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.login.generateOtp&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;generateOtp&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;generateOTP&quot;\,&quot;displayName&quot;:&quot;generateOTP&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:false\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\ngenerateOTP();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:click="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel.login.generateOtp&quot;\,&quot;event&quot;:&quot;Click&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;}\,&quot;content&quot;:&quot;\\n\\nfetch('/libs/granite/csrf/token.json')\\n.then(res => res.json())\\n.then(data => {\\n\\n    var email = guideBridge.resolveNode(\\&quot;guide[0].guide1[0].guideRootPanel[0].login[0].email[0]\\&quot;).value;;\\n\\n    fetch('/bin/sendotp'\, {\\n        method: 'POST'\,\\n        headers: {\\n            'Content-Type': 'application/x-www-form-urlencoded'\,\\n            'CSRF-Token': data.token\\n        }\,\\n        body: 'email=' + encodeURIComponent(email)\\n    })\\n    .then(res => res.json())\\n    .then(result => {\\n        alert(result.message);\\n    });\\n\\n});&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true},{&quot;script&quot;:{&quot;content&quot;:&quot;alert(\\&quot;Button Clicked\\&quot;);&quot;\,&quot;event&quot;:&quot;Click&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.login.generateOtp&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:false}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidebutton>
+                            <guidebutton_643990913
+                                jcr:created="{Date}2026-06-02T14:55:42.323+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-02T14:56:26.469+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Verify Otp"
+                                sling:resourceType="fd/af/components/actions/submit"
+                                dorExclusion="true"
+                                guideNodeClass="guideButton"
+                                name="verifyOtp"
+                                textIsRich="[true,true]"
+                                type="Button">
+                                <fd:rules
+                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.login.verifyOtp&quot;\,&quot;type&quot;:&quot;BUTTON|AFCOMPONENT&quot;\,&quot;name&quot;:&quot;verifyOtp&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;FUNCTION_CALL&quot;\,&quot;functionName&quot;:{&quot;id&quot;:&quot;verifyOTP&quot;\,&quot;displayName&quot;:&quot;verifyOTP&quot;\,&quot;type&quot;:&quot;STRING|NUMBER|BOOLEAN|DATE|OPTIONS&quot;\,&quot;isDuplicate&quot;:false\,&quot;displayPath&quot;:&quot;&quot;\,&quot;args&quot;:[]\,&quot;impl&quot;:&quot;$0()&quot;}\,&quot;params&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:false\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nverifyOTP();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts
+                                    fd:click="[{&quot;script&quot;:{&quot;content&quot;:&quot;\\n\\nfetch('/libs/granite/csrf/token.json')\\n.then(res => res.json())\\n.then(data => {\\n  \\n  var otp = guideBridge.resolveNode(\\&quot;guide[0].guide1[0].guideRootPanel[0].login[0].otp[0]\\&quot;).value;\\n\\n    fetch('/bin/verifyotp'\, {\\n        method: 'POST'\,\\n        headers: {\\n            'Content-Type': 'application/x-www-form-urlencoded'\,\\n            'CSRF-Token': data.token\\n        }\,\\n        body: 'otp=' + encodeURIComponent(otp)\\n    })\\n    .then(res => res.json())\\n    .then(result => {\\n\\n        if(result.status === \\&quot;success\\&quot;){\\n            alert(\\&quot;OTP Verified\\&quot;);\\n        } else {\\n            alert(\\&quot;Invalid OTP\\&quot;);\\n        }\\n\\n    });\\n\\n});&quot;\,&quot;event&quot;:&quot;Click&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.login.verifyOtp&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </guidebutton_643990913>
+                        </items>
+                    </panel_113705055>
+                    <submit
+                        jcr:created="{Date}2026-06-01T15:27:03.288+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-03T12:08:15.972+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Submit"
+                        sling:resourceType="fd/af/components/actions/submit"
+                        bindRef="/students"
+                        dorExclusion="true"
+                        guideNodeClass="guideButton"
+                        name="submit"
+                        textIsRich="[true,true]"
+                        type="submit">
+                        <fd:rules
+                            fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;XX&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;XX&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SUBMIT_FORM&quot;\,&quot;items&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nguideBridge.submit();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;}]"
+                            jcr:primaryType="nt:unstructured"/>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="5"
+                                width="7"/>
+                        </cq:responsive>
+                    </submit>
+                </items>
+            </rootPanel>
+            <autoSaveInfo
+                jcr:primaryType="nt:unstructured"
+                metadataselector="global"/>
+            <signerInfo
+                jcr:primaryType="nt:unstructured"
+                firstSignerFormFiller="false"
+                workflowType="SEQUENTIAL">
+                <signer0
+                    jcr:primaryType="nt:unstructured"
+                    countryCode="undefined"
+                    countryCodeSource="undefined"
+                    email="undefined"
+                    emailSource="undefined"
+                    phone="undefined"
+                    phoneSource="undefined"
+                    securityOption="undefined"
+                    signerTitle="Signer One"/>
+            </signerInfo>
+        </guideContainer>
+    </jcr:content>
+</jcr:root>

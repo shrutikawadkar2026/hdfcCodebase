@@ -1,0 +1,1618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:fd="http://www.adobe.com/aemfd/fd/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2026-06-05T15:24:57.301+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/ReferenceEditableTemplates/settings/wcm/templates/blank"
+        jcr:language="en"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Credit Card Application"
+        sling:resourceType="fd/af/components/page2/aftemplatedpage">
+        <guideContainer
+            fd:version="1.1"
+            jcr:lastModified="{Date}2026-06-04T13:35:22.589+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="fd/af/components/guideContainer"
+            actionType="fd/afaddon/components/actions/fdm"
+            autoSaveStrategyType="fd/fp/components/actions/autosave/timebased"
+            clientLibRef="hdfcforms"
+            disableSwipeGesture="{Boolean}false"
+            dorType="none"
+            enableAsyncSubmission="true"
+            enableFocusOnFirstField="{Boolean}true"
+            enableLayoutLayer="false"
+            fdmEntityPath="/credit_card_application"
+            guideCss="guideContainer"
+            guideNodeClass="guideContainerNode"
+            name="guide1"
+            schemaRef="/content/dam/formsanddocuments-fdm/hdfc/hdfc-form-data-model"
+            schemaType="formdatamodel"
+            textIsRich="true"
+            thankYouMessage="Thank you for submitting the form."
+            thankYouOption="message"
+            themeRef="/content/dam/formsanddocuments-themes/reference-themes/canvas-3-0"
+            useExistingAF="false">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/layouts/defaultGuideLayout"
+                mobileLayout="fd/af/layouts/mobile/step"
+                toolbarPosition="Bottom"/>
+            <rootPanel
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Root Panel"
+                sling:resourceType="fd/af/components/rootPanel"
+                dorExcludeDescription="true"
+                dorExcludeTitle="true"
+                guideNodeClass="rootPanelNode"
+                name="guideRootPanel"
+                panelSetType="Navigable">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                    nonNavigable="{Boolean}true"
+                    toolbarPosition="Bottom"/>
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                    <guideheader
+                        cq:cssClass="guide-1780642978102"
+                        jcr:created="{Date}2026-06-04T13:17:06.055+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-04T13:17:06.055+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Adaptive Form Header"
+                        sling:resourceType="fd/af/components/guideheader"
+                        cssStyle=".guide-1780642978102 .afHeader{&#xa;background:rgb(0,0,104);&#xa;&#xa;}&#xa;"
+                        name="header1780559226449">
+                        <guideimage
+                            jcr:lastModified="{Date}2026-06-05T12:34:38.477+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Logo"
+                            sling:resourceType="fd/af/components/guideimage"
+                            altText="Company Name"
+                            css="logoImage"
+                            fileReference="/content/dam/hdfc/hdfc-bank-logo.svg"
+                            guideNodeClass="guideImage"
+                            name="logoImage"/>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_header
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[background:rgb(0\,0\,104)]"
+                                default_x0023_default_x0023_ui="[backgroundColor:rgb(0\,0\,104)]"/>
+                        </style>
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="12"/>
+                        </cq:responsive>
+                    </guideheader>
+                    <guidetextdraw
+                        cq:cssClass="guide-1780573331245"
+                        jcr:created="{Date}2026-06-04T13:17:51.570+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-04T13:18:43.409+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="fd/af/components/guidetextdraw"
+                        _value="&lt;p>Please&amp;nbsp;provide following details to process your application&lt;/p>&#xa;"
+                        cssStyle=".guide-1780573331245 .guideTextDraw.guideStaticText{&#xa;font-size:20px;&#xa;color:rgb(0,0,0);&#xa;&#xa;}&#xa;"
+                        guideNodeClass="guideTextDraw"
+                        name="headerLine"
+                        textIsRich="true"
+                        visible="{Boolean}true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="0"
+                                width="8"/>
+                        </cq:responsive>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_textdraw
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[font-size:20px,color:rgb(0\,0\,0)]"/>
+                        </style>
+                    </guidetextdraw>
+                    <guideimage
+                        jcr:created="{Date}2026-06-04T13:17:57.443+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-05T12:53:05.314+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="fd/af/components/guideimage"
+                        enabled="{Boolean}true"
+                        fileReference="/content/dam/hdfc/10percent.jpg"
+                        guideNodeClass="guideImage"
+                        name="progressImage"
+                        visible="{Boolean}true">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="3"/>
+                        </cq:responsive>
+                    </guideimage>
+                    <panel
+                        cq:cssClass="guide-1780551682941"
+                        jcr:created="{Date}2026-06-03T13:27:41.272+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-03T13:33:23.989+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Applicant Details"
+                        sling:resourceType="fd/af/components/panel"
+                        css="applicant-details-panel"
+                        cssStyle=".guide-1780551682941 .guideGridFluidLayout{&#xa;border-color:#0074D9;&#xa;border-top-left-radius:10px;&#xa;border-bottom-left-radius:10px;&#xa;border-bottom-right-radius:10px;&#xa;border-top-right-radius:10px;&#xa;background:rgb(255,255,255);&#xa;&#xa;}&#xa;"
+                        guideNodeClass="guidePanel"
+                        name="pnlApplicantDetails"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <panel
+                                cq:cssClass="guide-1780552161903"
+                                jcr:created="{Date}2026-06-03T14:00:28.025+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T14:02:07.560+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="pnlRow1"
+                                sling:resourceType="fd/af/components/panel"
+                                css="form-row"
+                                cssStyle=".guide-1780552161903 .guideGridFluidLayout{&#xa;background:rgba(201,221,245,0.69);&#xa;margin-top:30px;&#xa;margin-bottom:30px;&#xa;margin-left:30px;&#xa;margin-right:30px;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guidePanel"
+                                name="pnlRow1"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                    columns="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                                    <guidetextbox
+                                        cq:cssClass="guide-1780551868088"
+                                        jcr:created="{Date}2026-06-03T13:33:53.347+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T10:17:02.443+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="First Name"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/first_name"
+                                        css="firstname"
+                                        cssStyle=".guide-1780551868088 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780551868088 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        maxChars="20"
+                                        minLength="3"
+                                        name="firstName"
+                                        textIsRich="[true,true,true]">
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts
+                                            fd:init="[{&quot;script&quot;:{&quot;field&quot;:&quot;guide.guideRootPanel.pnlApplicantDetails.pnlRow1.firstName&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;}\,&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.firstname input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    value = value.replace(/[^a-zA-Z]/g\, '');\\n\\n    if(value.length > 0){\\n        value = value.charAt(0).toUpperCase() + value.slice(1);\\n    }\\n\\n    $(this).val(value);\\n\\n});&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="5"/>
+                                        </cq:responsive>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox>
+                                    <guidetextbox_copy
+                                        cq:cssClass="guide-1780643255084"
+                                        jcr:created="{Date}2026-06-03T13:33:53.347+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T10:17:15.948+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Middle Name"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/middle_name"
+                                        css="middlename"
+                                        cssStyle=".guide-1780643255084 label{&#xa;color:#1a50a8;&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        maxChars="20"
+                                        minLength="3"
+                                        name="middleName"
+                                        textIsRich="[true,true,true]">
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts
+                                            fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.middlename input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    value = value.replace(/[^a-zA-Z]/g\, '');\\n\\n    if(value.length > 0){\\n        value = value.charAt(0).toUpperCase() + value.slice(1);\\n    }\\n\\n    $(this).val(value);\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.pnlApplicantDetails.pnlRow1.middleName&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="1"
+                                                width="6"/>
+                                        </cq:responsive>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:#1a50a8,font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox_copy>
+                                    <guidetextbox_copy_27
+                                        cq:cssClass="guide-1780643280038"
+                                        jcr:created="{Date}2026-06-03T13:33:53.347+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T10:17:28.667+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Last Name"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/last_name"
+                                        css="lastname"
+                                        cssStyle=".guide-1780643280038 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643280038 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        maxChars="20"
+                                        minLength="3"
+                                        name="lastName"
+                                        textIsRich="[true,true,true]">
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts
+                                            fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.lastname input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    value = value.replace(/[^a-zA-Z]/g\, '');\\n\\n    if(value.length > 0){\\n        value = value.charAt(0).toUpperCase() + value.slice(1);\\n    }\\n\\n    $(this).val(value);\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.pnlApplicantDetails.pnlRow1.lastName&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="5"/>
+                                        </cq:responsive>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox_copy_27>
+                                    <guideradiobutton
+                                        cq:cssClass="guide-1780551930905"
+                                        jcr:created="{Date}2026-06-03T13:35:41.084+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-05T12:39:06.303+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Gender"
+                                        sling:resourceType="fd/af/components/guideradiobutton"
+                                        alignment="guideFieldHorizontalAlignment"
+                                        bindRef="/credit_card_application/gender"
+                                        cssStyle=".guide-1780551930905 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;font-weight:bold;&#xa;&#xa;}&#xa;.guide-1780551930905 .afRadioButtonItem .guideWidgetLabel label{&#xa;font-size:18px;&#xa;font-family:Times New Roman;&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;.guide-1780551930905 label{&#xa;color:#1a50a8;&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideRadioButton"
+                                        mandatory="true"
+                                        name="gender"
+                                        options="[Male,Female,Other]"
+                                        textIsRich="[true,true]">
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="12"/>
+                                        </cq:responsive>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_radiobutton
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[font-weight:bold]"/>
+                                            <af_radiobuttonitemlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[font-size:18px,font-family:Times New Roman,color:#1a50a8]"
+                                                default_x0023_default_x0023_ui="[fontFamilyFieldContainer:{&quot;itemList&quot;:[{&quot;id&quot;:&quot;fontFamily.1780551994790&quot;\,&quot;fontFamily&quot;:&quot;Times New Roman&quot;\,&quot;fontName&quot;:&quot;Times New Roman&quot;}]}]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:#1a50a8,font-weight:bold]"/>
+                                        </style>
+                                    </guideradiobutton>
+                                </items>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_responsivepanel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[background:rgba(201\,221\,245\,0.69),margin-top:30px,margin-bottom:30px,margin-left:30px,margin-right:30px]"
+                                        default_x0023_default_x0023_ui="[backgroundColor:rgba(201\,221\,245\,0.69),marginPopover:30px]"/>
+                                </style>
+                            </panel>
+                            <panel_copy
+                                jcr:created="{Date}2026-06-03T14:00:28.025+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T14:02:16.503+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="pnlRow2"
+                                sling:resourceType="fd/af/components/panel"
+                                css="form-row"
+                                guideNodeClass="guidePanel"
+                                name="pnlRow2"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                    columns="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                                    <guideemail
+                                        cq:cssClass="guide-1780552180847"
+                                        jcr:created="{Date}2026-06-03T13:37:43.234+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-05T12:39:14.142+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Personal Email"
+                                        sling:resourceType="fd/af/components/guideemail"
+                                        autofillFieldKeyword="email"
+                                        bindRef="/credit_card_application/personal_email"
+                                        cssStyle=".guide-1780552180847 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;background:rgba(201,221,245,0.72);&#xa;border-top-left-radius:15px;&#xa;border-bottom-left-radius:15px;&#xa;border-bottom-right-radius:15px;&#xa;border-top-right-radius:15px;&#xa;margin-top:30px;&#xa;margin-bottom:30px;&#xa;margin-left:30px;&#xa;margin-right:30px;&#xa;&#xa;}&#xa;.guide-1780552180847 label{&#xa;color:#1a50a8;&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        name="personalEmail"
+                                        textIsRich="[true,true]"
+                                        validatePictureClause="^(([^&lt;>()\\[\\]\\\\.,;:\\s@&quot;]+(\\.[^&lt;>()\\[\\]\\\\.,;:\\s@&quot;]+)*)|(&quot;.+&quot;))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$"
+                                        validationPatternType="custom">
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="12"/>
+                                        </cq:responsive>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[background:rgba(201\,221\,245\,0.72),border-top-left-radius:15px,border-bottom-left-radius:15px,border-bottom-right-radius:15px,border-top-right-radius:15px,margin-top:30px,margin-bottom:30px,margin-left:30px,margin-right:30px]"
+                                                default_x0023_default_x0023_ui="[backgroundColor:rgba(201\,221\,245\,0.72),borderRadiusPopover:15px,marginPopover:30px]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:#1a50a8,font-weight:bold]"/>
+                                        </style>
+                                    </guideemail>
+                                </items>
+                            </panel_copy>
+                            <panel_copy_976345156
+                                cq:cssClass="guide-1780552196357"
+                                jcr:created="{Date}2026-06-03T14:00:28.025+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T12:44:38.811+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="pnlRow3"
+                                sling:resourceType="fd/af/components/panel"
+                                cssStyle=".guide-1780552196357 .guideGridFluidLayout{&#xa;background:rgba(201,221,245,0.71);&#xa;border-top-left-radius:15px;&#xa;border-bottom-left-radius:15px;&#xa;border-bottom-right-radius:15px;&#xa;border-top-right-radius:15px;&#xa;margin-top:30px;&#xa;margin-bottom:30px;&#xa;margin-left:30px;&#xa;margin-right:30px;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guidePanel"
+                                name="pnlRow3"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                    columns="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                                    <guidedateinput
+                                        cq:cssClass="guide-1780643473548"
+                                        jcr:created="{Date}2026-06-03T13:37:13.484+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-05T12:39:21.813+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="DOB"
+                                        sling:resourceType="fd/af/components/guidedatepicker"
+                                        bindRef="/credit_card_application/dob"
+                                        cssStyle=".guide-1780643473548 label{&#xa;font-weight:bold;&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;.guide-1780643473548 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;padding-top:8px;&#xa;padding-bottom:8px;&#xa;padding-left:8px;&#xa;padding-right:8px;&#xa;&#xa;}&#xa;"
+                                        dateDisplayFormat="date{YYYY/M/D}"
+                                        guideNodeClass="guideDatePicker"
+                                        mandatory="true"
+                                        name="dob"
+                                        placeholderDay="DD"
+                                        placeholderMonth="MM"
+                                        placeholderYear="YYYY"
+                                        textIsRich="[true,true]"
+                                        titleDay="Day"
+                                        titleMonth="Month"
+                                        titleYear="Year">
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="5"/>
+                                        </cq:responsive>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[font-weight:bold,color:#1a50a8]"/>
+                                            <af_daypicker
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[padding-top:8px,padding-bottom:8px,padding-left:8px,padding-right:8px]"
+                                                default_x0023_default_x0023_ui="[paddingPopover:8px]"/>
+                                        </style>
+                                    </guidedateinput>
+                                    <guidetextbox_6599823
+                                        cq:cssClass="guide-1780643482948"
+                                        jcr:created="{Date}2026-06-03T13:39:40.819+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T13:11:09.356+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Company Name"
+                                        sling:resourceType="fd/af/components/guidedropdownlist"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/company_name"
+                                        css="companyname"
+                                        cssStyle=".guide-1780643482948 label{&#xa;font-weight:bold;&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;.guide-1780643482948 .dropDownList  select{&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;.guide-1780643482948 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;padding-top:8px;&#xa;padding-bottom:8px;&#xa;padding-left:8px;&#xa;padding-right:8px;&#xa;&#xa;}&#xa;"
+                                        enabled="{Boolean}true"
+                                        guideNodeClass="guideDropDownList"
+                                        mandatory="true"
+                                        name="companyName"
+                                        options="[Adobe ,abc,Tata]"
+                                        textIsRich="[true,true]"
+                                        visible="{Boolean}true">
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts
+                                            fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.companyname input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    value = value.replace(/[^a-zA-Z]/g\, '');\\n\\n    if(value.length > 0){\\n        value = value.charAt(0).toUpperCase() + value.slice(1);\\n    }\\n\\n    $(this).val(value);\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.pnlApplicantDetails.pnlRow3.companyName&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:false}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="7"/>
+                                        </cq:responsive>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[font-weight:bold,color:#1a50a8]"/>
+                                            <af_dropdownlistwidgetandtext
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:#1a50a8]"/>
+                                            <af_dropdownlist
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[padding-top:8px,padding-bottom:8px,padding-left:8px,padding-right:8px]"
+                                                default_x0023_default_x0023_ui="[paddingPopover:8px]"/>
+                                        </style>
+                                    </guidetextbox_6599823>
+                                </items>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_responsivepanel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[background:rgba(201\,221\,245\,0.71),border-top-left-radius:15px,border-bottom-left-radius:15px,border-bottom-right-radius:15px,border-top-right-radius:15px,margin-top:30px,margin-bottom:30px,margin-left:30px,margin-right:30px]"
+                                        default_x0023_default_x0023_ui="[backgroundColor:rgba(201\,221\,245\,0.71),borderRadiusPopover:15px,marginPopover:30px]"/>
+                                </style>
+                            </panel_copy_976345156>
+                            <panel_copy_1417200223
+                                cq:cssClass="guide-1780559922469"
+                                jcr:created="{Date}2026-06-03T14:00:28.025+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T14:01:59.719+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="pnlRow4"
+                                sling:resourceType="fd/af/components/panel"
+                                css="form-row"
+                                cssStyle=".guide-1780559922469 .guideGridFluidLayout{&#xa;background:rgba(201,221,245,0.71);&#xa;margin-top:30px;&#xa;margin-bottom:30px;&#xa;margin-left:30px;&#xa;margin-right:30px;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guidePanel"
+                                name="pnlRow4"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                    columns="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                                    <guidedropdownlist
+                                        cq:cssClass="guide-1780552210511"
+                                        jcr:created="{Date}2026-06-03T13:38:14.770+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-05T12:39:29.239+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Employment Type"
+                                        sling:resourceType="fd/af/components/guidedropdownlist"
+                                        bindRef="/credit_card_application/employment_type"
+                                        cssStyle=".guide-1780552210511 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780552210511 label{&#xa;font-weight:bold;&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;.guide-1780552210511 .dropDownList  select{&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideDropDownList"
+                                        mandatory="true"
+                                        name="employmentType"
+                                        options="[Salaried,Self Employeed,Proffessional,Buisness Owner]"
+                                        textIsRich="[true,true]">
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="5"/>
+                                        </cq:responsive>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_dropdownlist
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"
+                                                default_x0023_default_x0023_ui="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[font-weight:bold,color:#1a50a8]"/>
+                                            <af_dropdownlistwidgetandtext
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:#1a50a8]"/>
+                                        </style>
+                                    </guidedropdownlist>
+                                    <guidetextbox_1290400
+                                        cq:cssClass="guide-1780552217952"
+                                        jcr:created="{Date}2026-06-03T13:40:44.721+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T10:22:58.603+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Designation"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/designation"
+                                        css="designation"
+                                        cssStyle=".guide-1780552217952 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780552217952 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        name="designation"
+                                        textIsRich="[true,true,true]">
+                                        <cq:responsive jcr:primaryType="nt:unstructured">
+                                            <default
+                                                jcr:primaryType="nt:unstructured"
+                                                offset="0"
+                                                width="7"/>
+                                        </cq:responsive>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox_1290400>
+                                </items>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_responsivepanel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[background:rgba(201\,221\,245\,0.71),margin-top:30px,margin-bottom:30px,margin-left:30px,margin-right:30px]"
+                                        default_x0023_default_x0023_ui="[backgroundColor:rgba(201\,221\,245\,0.71),marginPopover:30px]"/>
+                                </style>
+                            </panel_copy_1417200223>
+                        </items>
+                        <style jcr:primaryType="nt:unstructured">
+                            <af_responsivepanel
+                                jcr:primaryType="nt:unstructured"
+                                default_x0023_default="[border-color:#0074D9,border-top-left-radius:10px,border-bottom-left-radius:10px,border-bottom-right-radius:10px,border-top-right-radius:10px,background:rgb(255\,255\,255)]"
+                                default_x0023_default_x0023_ui="[borderRadiusPopover:10px,backgroundColor:rgb(255\,255\,255)]"/>
+                        </style>
+                    </panel>
+                    <panel_1069387186
+                        jcr:created="{Date}2026-06-03T13:42:19.066+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-03T13:43:03.554+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Residence Address"
+                        sling:resourceType="fd/af/components/panel"
+                        css="residence-address-panel"
+                        guideNodeClass="guidePanel"
+                        name="pnlResidenceAddress"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidetextbox_1394643
+                                cq:cssClass="guide-1780573460933"
+                                jcr:created="{Date}2026-06-03T13:45:01.674+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T12:39:37.855+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Address source"
+                                sling:resourceType="fd/af/components/guideradiobutton"
+                                alignment="guideFieldHorizontalAlignment"
+                                autofillFieldKeyword="name"
+                                bindRef="/credit_card_application/address_source"
+                                cssStyle=".guide-1780573460933 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;background:rgba(201,221,245,0.71);&#xa;border-top-left-radius:21px;&#xa;border-bottom-left-radius:21px;&#xa;border-bottom-right-radius:21px;&#xa;border-top-right-radius:21px;&#xa;&#xa;}&#xa;.guide-1780573460933 label{&#xa;font-weight:bold;&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;.guide-1780573460933 .afRadioButtonItem .guideWidgetLabel label{&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;"
+                                enabled="{Boolean}true"
+                                guideNodeClass="guideRadioButton"
+                                mandatory="true"
+                                name="addressSource"
+                                options="[Get your address prefilled from the records with our government approved partner Equifax,Enter Manually]"
+                                textIsRich="[true,true]"
+                                visible="{Boolean}true">
+                                <fd:rules
+                                    fd:valueCommit="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BINARY_EVENT_CONDITION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress.addressSource&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;addressSource&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;AND&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress.addressSource&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;addressSource&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EQUALS_TO&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;Get your address prefilled from the records with our government approved partner Equifax&quot;}}]}\,&quot;nested&quot;:false}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SHOW_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress.abc&quot;\,&quot;displayName&quot;:&quot;abc&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Residence Address/abc/&quot;\,&quot;name&quot;:&quot;abc&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;HIDE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress.addressPanel&quot;\,&quot;displayName&quot;:&quot;Address Panel&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Residence Address/Address Panel/&quot;\,&quot;name&quot;:&quot;addressPanel&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nif ( ( (true) &amp;&amp; this.value == \\&quot;Get your address prefilled from the records with our government approved partner Equifax\\&quot; ) ) {\\n    abc.visible = true;\\n    addressPanel.visible = false;\\n}\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BINARY_EVENT_CONDITION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress.addressSource&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;addressSource&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;AND&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress.addressSource&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;addressSource&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EQUALS_TO&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;Enter Manually&quot;}}]}\,&quot;nested&quot;:false}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;HIDE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress.abc&quot;\,&quot;displayName&quot;:&quot;abc&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Residence Address/abc/&quot;\,&quot;name&quot;:&quot;abc&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SHOW_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress.addressPanel&quot;\,&quot;displayName&quot;:&quot;Address Panel&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Residence Address/Address Panel/&quot;\,&quot;name&quot;:&quot;addressPanel&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nif ( ( (true) &amp;&amp; this.value == \\&quot;Enter Manually\\&quot; ) ) {\\n    abc.visible = false;\\n    addressPanel.visible = true;\\n}\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_radiobutton
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[background:rgba(201\,221\,245\,0.71),border-top-left-radius:21px,border-bottom-left-radius:21px,border-bottom-right-radius:21px,border-top-right-radius:21px]"
+                                        default_x0023_default_x0023_ui="[backgroundColor:rgba(201\,221\,245\,0.71),borderRadiusPopover:21px]"/>
+                                    <af_fieldlabel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[font-weight:bold,color:#1a50a8]"/>
+                                    <af_radiobuttonitemlabel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#1a50a8]"/>
+                                </style>
+                            </guidetextbox_1394643>
+                            <guidetextbox
+                                cq:cssClass="guide-1780573482609"
+                                jcr:created="{Date}2026-06-04T11:34:34.023+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-04T11:38:02.013+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="abc"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>Please fill the address manually&lt;/p>&#xa;"
+                                autofillFieldKeyword="name"
+                                cssStyle=".guide-1780573482609 .guideTextDraw.guideStaticText{&#xa;color:rgb(0,0,0);&#xa;text-align:center;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="abc"
+                                textIsRich="[true]"
+                                visible="{Boolean}false">
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_textdraw
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:rgb(0\,0\,0),text-align:center]"/>
+                                </style>
+                            </guidetextbox>
+                            <panel
+                                cq:cssClass="guide-1780559970075"
+                                jcr:created="{Date}2026-06-04T11:30:19.122+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-04T11:38:24.403+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Address Panel"
+                                sling:resourceType="fd/af/components/panel"
+                                cssStyle=".guide-1780559970075 .guideGridFluidLayout{&#xa;background:rgba(201,221,245,0.72);&#xa;border-top-left-radius:41px;&#xa;border-bottom-left-radius:41px;&#xa;border-bottom-right-radius:41px;&#xa;border-top-right-radius:41px;&#xa;padding-top:11px;&#xa;padding-bottom:11px;&#xa;padding-left:11px;&#xa;padding-right:11px;&#xa;margin-top:14px;&#xa;margin-bottom:14px;&#xa;margin-left:14px;&#xa;margin-right:14px;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guidePanel"
+                                name="addressPanel"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false"
+                                visible="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                    columns="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                                    <guidetextbox_2057556
+                                        cq:cssClass="guide-1780643295435"
+                                        jcr:created="{Date}2026-06-03T13:45:29.561+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T10:23:30.054+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Address Line 1"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/address_line1"
+                                        css="addressLine1"
+                                        cssStyle=".guide-1780643295435 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643295435 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        name="addressLine1"
+                                        textIsRich="[true,true,true]">
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts
+                                            fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.addressLine1 input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    if (value.length >= 30) {\\n        $(\\&quot;.addressLine2 input\\&quot;).focus();\\n    }\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress.addressLine1&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox_2057556>
+                                    <guidetextbox_2057556_208118994
+                                        cq:cssClass="guide-1780643297462"
+                                        jcr:created="{Date}2026-06-03T13:45:29.561+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T10:47:53.951+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Address Line 2"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/address_line2"
+                                        css="addressLine2"
+                                        cssStyle=".guide-1780643297462 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643297462 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        displayIsSameAsValidate="true"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        maxChars="30"
+                                        name="addressLine2"
+                                        textIsRich="[true,true,true]">
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts
+                                            fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.addressLine2 input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    if (value.length > 30) {\\n\\n        this.setCustomValidity(\\&quot;Address cannot exceed 60 characters.\\&quot;);\\n        this.reportValidity();\\n\\n    } else {\\n\\n        this.setCustomValidity(\\&quot;\\&quot;);\\n\\n    }\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress.addressLine2&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox_2057556_208118994>
+                                    <guidetextbox_1327274
+                                        cq:cssClass="guide-1780643299541"
+                                        jcr:created="{Date}2026-06-03T13:46:57.985+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-05T13:43:42.658+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="landmark"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/landmark"
+                                        cssStyle=".guide-1780643299541 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643299541 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        name="landmark"
+                                        textIsRich="[true,true,true]">
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox_1327274>
+                                    <guidenumericbox
+                                        cq:cssClass="guide-1780643301978"
+                                        jcr:created="{Date}2026-06-03T13:46:21.497+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-05T10:10:26.824+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Pincode"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/pincode"
+                                        css="pincode"
+                                        cssStyle=".guide-1780643301978 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643301978 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        displayIsSameAsValidate="true"
+                                        displayPatternType="custom"
+                                        displayPictureClause="^[0-9]{6}$"
+                                        guideNodeClass="guideTextBox"
+                                        length="6"
+                                        mandatory="true"
+                                        name="pincode"
+                                        textIsRich="[true,true,true]"
+                                        validatePictureClause="text{99999}">
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts
+                                            fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).ready(function(){\\n  \\n  let switchNode = guideBridge.resolveNode(\\&quot;channelSwitch\\&quot;);\\n\\nif (switchNode) {\\n    switchNode.enabled = false;\\n}\\n\\n  $(document).on(\\&quot;input\\&quot;\, \\&quot;.pincode input\\&quot;\, function () {\\n\\n    let pincode = this.value;\\n\\n    if (pincode.length !== 6) {\\n\\n    let switchNode = guideBridge.resolveNode(\\&quot;channelSwitch\\&quot;);\\n\\n    if (switchNode) {\\n        switchNode.enabled = false;\\n        switchNode.value = false;\\n    }\\n\\n    let cityNode = guideBridge.resolveNode(\\&quot;city\\&quot;);\\n    let stateNode = guideBridge.resolveNode(\\&quot;state\\&quot;);\\n\\n    if (cityNode) {\\n        cityNode.value = \\&quot;\\&quot;;\\n        cityNode.enabled = true;\\n    }\\n\\n    if (stateNode) {\\n        stateNode.value = \\&quot;\\&quot;;\\n        stateNode.enabled = true;\\n    }\\n\\n    let panel = guideBridge.resolveNode(\\&quot;channelDetailsPanel\\&quot;);\\n\\n    if (panel) {\\n        panel.visible = false;\\n    }\\n\\n    return;\\n}\\n\\n    fetch(\\&quot;/content/pincode.json?pincode=\\&quot; + pincode)\\n        .then(res => res.json())\\n        .then(data => {\\n\\n            let cityNode = guideBridge.resolveNode(\\&quot;city\\&quot;);\\n            let stateNode = guideBridge.resolveNode(\\&quot;state\\&quot;);\\n      \\n\\n\\n\\n            if (data.success) {\\n              let switchNode = guideBridge.resolveNode(\\&quot;channelSwitch\\&quot;);\\n              \\n              if (switchNode) {\\n                switchNode.enabled = true;\\n              }\\n\\n                if (cityNode) cityNode.value = data.city;\\n                if (stateNode) stateNode.value = data.state;\\n\\n                if (cityNode) cityNode.enabled = false;\\n                if (stateNode) stateNode.enabled = false;\\n\\n                setTimeout(() => {\\n\\n                    let cityInput = document.querySelector(\\&quot;.city input\\&quot;);\\n                    let stateInput = document.querySelector(\\&quot;.state input\\&quot;);\\n\\n                    if (cityInput) {\\n                        cityInput.setAttribute(\\&quot;readonly\\&quot;\, true);\\n                        cityInput.style.backgroundColor = \\&quot;#f2f2f2\\&quot;;\\n                    }\\n\\n                    if (stateInput) {\\n                        stateInput.setAttribute(\\&quot;readonly\\&quot;\, true);\\n                        stateInput.style.backgroundColor = \\&quot;#f2f2f2\\&quot;;\\n                    }\\n\\n                }\, 50);\\n\\n            } else {\\n              \\n                let switchNode = guideBridge.resolveNode(\\&quot;channelSwitch\\&quot;);\\n\\n                  if (switchNode) {\\n                      switchNode.enabled = false;\\n                      switchNode.value = false;\\n                  }\\n\\n                if (cityNode) {\\n                    cityNode.value = \\&quot;\\&quot;;\\n                    cityNode.enabled = true;\\n                }\\n\\n                if (stateNode) {\\n                    stateNode.value = \\&quot;\\&quot;;\\n                    stateNode.enabled = true;\\n                }\\n\\n                setTimeout(() => {\\n\\n                    let cityInput = document.querySelector(\\&quot;.city input\\&quot;);\\n                    let stateInput = document.querySelector(\\&quot;.state input\\&quot;);\\n\\n                    if (cityInput) {\\n                        cityInput.removeAttribute(\\&quot;readonly\\&quot;);\\n                        cityInput.style.backgroundColor = \\&quot;\\&quot;;\\n                    }\\n\\n                    if (stateInput) {\\n                        stateInput.removeAttribute(\\&quot;readonly\\&quot;);\\n                        stateInput.style.backgroundColor = \\&quot;\\&quot;;\\n                    }\\n\\n                }\, 50);\\n\\n            }\\n\\n        })\\n        .catch(error => {\\n            console.error(\\&quot;Pincode API Error:\\&quot;\, error);\\n        });\\n\\n});\\n  \\n  });&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.pnlResidenceAddress.addressPanel.pincode&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                    </guidenumericbox>
+                                    <guidetextbox_1676270
+                                        cq:cssClass="guide-1780643304763"
+                                        jcr:created="{Date}2026-06-03T13:47:25.778+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-05T13:44:08.671+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="City"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/city"
+                                        cssStyle=".guide-1780643304763 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643304763 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        name="city"
+                                        textIsRich="[true,true,true]">
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox_1676270>
+                                    <guidetextbox
+                                        cq:cssClass="guide-1780643307051"
+                                        jcr:created="{Date}2026-06-03T13:50:25.905+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-05T13:44:15.374+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="State"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/state"
+                                        cssStyle=".guide-1780643307051 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643307051 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        name="state"
+                                        textIsRich="[true,true,true]">
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox>
+                                    <guidetextbox_1565485
+                                        cq:cssClass="guide-1780643563389"
+                                        jcr:created="{Date}2026-06-03T13:50:56.569+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T10:25:30.947+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Residence Type"
+                                        sling:resourceType="fd/af/components/guidedropdownlist"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/residence_type"
+                                        css="hdfc-dropdown"
+                                        cssStyle=".guide-1780643563389 label{&#xa;color:#1a50a8;&#xa;font-weight:bold;&#xa;&#xa;}&#xa;.guide-1780643563389 .dropDownList  select{&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;"
+                                        enabled="{Boolean}true"
+                                        guideNodeClass="guideDropDownList"
+                                        mandatory="true"
+                                        name="residenceType"
+                                        options="[Company Provided,Owned by Parent/sibling,Owned by Self/Spouse]"
+                                        textIsRich="[true,true]"
+                                        visible="{Boolean}true">
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:#1a50a8,font-weight:bold]"/>
+                                            <af_dropdownlistwidgetandtext
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:#1a50a8]"/>
+                                        </style>
+                                    </guidetextbox_1565485>
+                                </items>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_responsivepanel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[background:rgba(201\,221\,245\,0.72),border-top-left-radius:41px,border-bottom-left-radius:41px,border-bottom-right-radius:41px,border-top-right-radius:41px,padding-top:11px,padding-bottom:11px,padding-left:11px,padding-right:11px,margin-top:14px,margin-bottom:14px,margin-left:14px,margin-right:14px]"
+                                        default_x0023_default_x0023_ui="[backgroundColor:rgba(201\,221\,245\,0.72),borderRadiusPopover:41px,paddingPopover:11px,marginPopover:14px]"/>
+                                </style>
+                            </panel>
+                        </items>
+                    </panel_1069387186>
+                    <panel_1069387186_cop
+                        jcr:created="{Date}2026-06-03T13:42:19.066+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-03T16:23:50.858+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Permanant Address"
+                        sling:resourceType="fd/af/components/panel"
+                        css="residence-address-panel"
+                        enabled="{Boolean}true"
+                        guideNodeClass="guidePanel"
+                        name="pnlPermanantAddress"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false"
+                        visible="{Boolean}true">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidetextbox_1394643
+                                cq:cssClass="guide-1780642446215"
+                                jcr:created="{Date}2026-06-03T13:45:01.000+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T12:40:16.443+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Permanant Address source"
+                                sling:resourceType="fd/af/components/guideradiobutton"
+                                alignment="guideFieldHorizontalAlignment"
+                                autofillFieldKeyword="name"
+                                bindRef="/credit_card_application/same_as_residence"
+                                cssStyle=".guide-1780642446215 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;background:rgba(201,221,245,0.73);&#xa;border-top-left-radius:22px;&#xa;border-bottom-left-radius:22px;&#xa;border-bottom-right-radius:22px;&#xa;border-top-right-radius:22px;&#xa;&#xa;}&#xa;.guide-1780642446215 label{&#xa;font-weight:bold;&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;.guide-1780642446215 .afRadioButtonItem .guideWidgetLabel label{&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;"
+                                enabled="{Boolean}true"
+                                guideNodeClass="guideRadioButton"
+                                mandatory="true"
+                                name="permanantAddressSource"
+                                options="[Get your address prefilled from the records with our government approved partner Equifax,Enter Manually]"
+                                textIsRich="[true,true]"
+                                visible="{Boolean}true">
+                                <fd:rules
+                                    fd:valueCommit="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BINARY_EVENT_CONDITION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress.permanantAddressSource&quot;\,&quot;type&quot;:&quot;RADIO BUTTON|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;permanantAddressSource&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;AND&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress.permanantAddressSource&quot;\,&quot;type&quot;:&quot;RADIO BUTTON|FIELD|AFCOMPONENT|STRING&quot;\,&quot;name&quot;:&quot;permanantAddressSource&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EQUALS_TO&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;Get your address prefilled from the records with our government approved partner Equifax&quot;}}]}\,&quot;nested&quot;:false}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;HIDE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress.permanantAddressPanel&quot;\,&quot;displayName&quot;:&quot;Permanant Address Panel&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Permanant Address/Permanant Address Panel/&quot;\,&quot;name&quot;:&quot;permanantAddressPanel&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SHOW_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress.permanantabc&quot;\,&quot;displayName&quot;:&quot;abc&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;isDuplicate&quot;:true\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Permanant Address/abc/&quot;\,&quot;name&quot;:&quot;permanantabc&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nif ( ( (true) &amp;&amp; this.value == \\&quot;Get your address prefilled from the records with our government approved partner Equifax\\&quot; ) ) {\\n    permanantAddressPanel.visible = false;\\n    permanantabc.visible = true;\\n}\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;},{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;BINARY_EVENT_CONDITION&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress.permanantAddressSource&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;permanantAddressSource&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is changed&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;AND&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress.permanantAddressSource&quot;\,&quot;type&quot;:&quot;STRING&quot;\,&quot;name&quot;:&quot;permanantAddressSource&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EQUALS_TO&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;STRING_LITERAL&quot;\,&quot;value&quot;:&quot;Enter Manually&quot;}}]}\,&quot;nested&quot;:false}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;HIDE_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress.permanantabc&quot;\,&quot;displayName&quot;:&quot;abc&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;isDuplicate&quot;:true\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Permanant Address/abc/&quot;\,&quot;name&quot;:&quot;permanantabc&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress&quot;}}]}}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SHOW_STATEMENT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;AFCOMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress.permanantAddressPanel&quot;\,&quot;displayName&quot;:&quot;Permanant Address Panel&quot;\,&quot;type&quot;:&quot;AFCOMPONENT&quot;\,&quot;displayPath&quot;:&quot;FORM/Root Panel/Permanant Address/Permanant Address Panel/&quot;\,&quot;name&quot;:&quot;permanantAddressPanel&quot;\,&quot;parent&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress&quot;}}]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nif ( ( (true) &amp;&amp; this.value == \\&quot;Enter Manually\\&quot; ) ) {\\n    permanantabc.visible = false;\\n    permanantAddressPanel.visible = true;\\n}\\n&quot;\,&quot;eventName&quot;:&quot;Value Commit&quot;\,&quot;ruleType&quot;:&quot;&quot;\,&quot;description&quot;:&quot;&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <fd:scripts jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_radiobutton
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[background:rgba(201\,221\,245\,0.73),border-top-left-radius:22px,border-bottom-left-radius:22px,border-bottom-right-radius:22px,border-top-right-radius:22px]"
+                                        default_x0023_default_x0023_ui="[backgroundColor:rgba(201\,221\,245\,0.73),borderRadiusPopover:22px]"/>
+                                    <af_fieldlabel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[font-weight:bold,color:#1a50a8]"/>
+                                    <af_radiobuttonitemlabel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#1a50a8]"/>
+                                </style>
+                            </guidetextbox_1394643>
+                            <guidetextbox_copy
+                                cq:cssClass="guide-1780643606278"
+                                jcr:created="{Date}2026-06-04T11:34:34.023+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-04T11:45:46.401+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="abc"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>Please fill the address manually&lt;/p>&#xa;"
+                                autofillFieldKeyword="name"
+                                cssStyle=".guide-1780643606278 .guideTextDraw.guideStaticText{&#xa;color:#1a50a8;&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="permanantabc"
+                                textIsRich="[true]"
+                                visible="{Boolean}false">
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_textdraw
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#1a50a8,font-weight:bold]"/>
+                                </style>
+                            </guidetextbox_copy>
+                            <panel
+                                cq:cssClass="guide-1780559996819"
+                                jcr:created="{Date}2026-06-04T11:43:02.800+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-04T11:45:58.201+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Permanant Address Panel"
+                                sling:resourceType="fd/af/components/panel"
+                                cssStyle=".guide-1780559996819 .guideGridFluidLayout{&#xa;background:rgba(201,221,245,0.7);&#xa;border-top-left-radius:30px;&#xa;border-bottom-left-radius:30px;&#xa;border-bottom-right-radius:30px;&#xa;border-top-right-radius:30px;&#xa;padding-top:11px;&#xa;padding-bottom:11px;&#xa;padding-left:11px;&#xa;padding-right:11px;&#xa;&#xa;}&#xa;"
+                                guideNodeClass="guidePanel"
+                                name="permanantAddressPanel"
+                                textIsRich="true"
+                                validateOnStepCompletion="{Boolean}false"
+                                visible="{Boolean}false">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                    columns="1"
+                                    nonNavigable="{Boolean}true"
+                                    toolbarPosition="Bottom"/>
+                                <items
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                                    <guidetextbox_2057556_152157051
+                                        cq:cssClass="guide-1780643309730"
+                                        jcr:created="{Date}2026-06-03T13:45:29.561+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T10:44:16.702+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Permanant Address Line 1"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/permanent_address_line1"
+                                        css="PermanantAddressLine1"
+                                        cssStyle=".guide-1780643309730 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643309730 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        enabled="{Boolean}true"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        name="PermanantAddressLine1"
+                                        textIsRich="[true,true,true]"
+                                        visible="{Boolean}true">
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts
+                                            fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.PermanantAddressLine1 input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    if (value.length >= 30) {\\n        $(\\&quot;.permanantAddressLine2 input\\&quot;).focus();\\n    }\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress.PermanantAddressLine1&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox_2057556_152157051>
+                                    <guidetextbox_2057556
+                                        cq:cssClass="guide-1780643312243"
+                                        jcr:created="{Date}2026-06-03T13:45:29.561+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T10:48:07.982+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Permanant Address Line 2"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/permanent_address_line2"
+                                        css="permanantAddressLine2"
+                                        cssStyle=".guide-1780643312243 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643312243 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        displayIsSameAsValidate="true"
+                                        enabled="{Boolean}true"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        maxChars="30"
+                                        name="permanantAddressLine2"
+                                        textIsRich="[true,true,true]"
+                                        visible="{Boolean}true">
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts
+                                            fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).on(\\&quot;input\\&quot;\, \\&quot;.permanantAddressLine2 input\\&quot;\, function () {\\n\\n    let value = $(this).val();\\n\\n    if (value.length > 30) {\\n\\n        this.setCustomValidity(\\&quot;Address cannot exceed 60 characters.\\&quot;);\\n        this.reportValidity();\\n\\n    } else {\\n\\n        this.setCustomValidity(\\&quot;\\&quot;);\\n\\n    }\\n\\n});&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress.permanantAddressLine2&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox_2057556>
+                                    <guidetextbox_1327274
+                                        cq:cssClass="guide-1780643313819"
+                                        jcr:created="{Date}2026-06-03T13:46:57.985+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-05T13:43:54.814+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="landmark"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/permanent_landmark"
+                                        cssStyle=".guide-1780643313819 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643313819 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        enabled="{Boolean}true"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        name="permanantAddressLandmark"
+                                        textIsRich="[true,true,true]"
+                                        visible="{Boolean}true">
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox_1327274>
+                                    <guidenumericbox
+                                        cq:cssClass="guide-1780643315747"
+                                        jcr:created="{Date}2026-06-03T13:46:21.497+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-05T10:11:09.597+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Pincode"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/permanent_pincode"
+                                        css="permanantPincode "
+                                        cssStyle=".guide-1780643315747 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643315747 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        displayIsSameAsValidate="true"
+                                        displayPatternType="custom"
+                                        displayPictureClause="^[0-9]{6}$"
+                                        enabled="{Boolean}true"
+                                        guideNodeClass="guideTextBox"
+                                        length="6"
+                                        mandatory="true"
+                                        name="permanantAddressPincode"
+                                        textIsRich="[true,true,true]"
+                                        validatePictureClause="text{99999}"
+                                        visible="{Boolean}true">
+                                        <fd:rules jcr:primaryType="nt:unstructured"/>
+                                        <fd:scripts
+                                            fd:init="[{&quot;script&quot;:{&quot;content&quot;:&quot;$(document).ready(function(){\\n\\n$(document).on(\\&quot;input\\&quot;\, \\&quot;.permanantPincode input\\&quot;\, function () {\\n\\n    let ppincode = this.value;\\n\\n    if (ppincode.length !== 6) return;\\n\\n    fetch(\\&quot;/content/pincode.json?pincode=\\&quot; + ppincode)\\n        .then(res => res.json())\\n        .then(data => {\\n\\n            let pcityNode = guideBridge.resolveNode(\\&quot;permanantAddressCity\\&quot;);\\n            let pstateNode = guideBridge.resolveNode(\\&quot;permanantAddressState\\&quot;);\\n\\n            if (data.success) {\\n\\n                if (pcityNode) pcityNode.value = data.city;\\n                if (pstateNode) pstateNode.value = data.state;\\n\\n                if (pcityNode) pcityNode.enabled = false;\\n                if (pstateNode) pstateNode.enabled = false;\\n\\n                setTimeout(() => {\\n\\n                    let pcityInput = document.querySelector(\\&quot;.permanantCity input\\&quot;);\\n                    let pstateInput = document.querySelector(\\&quot;.permanantState input\\&quot;);\\n\\n                    if (pcityInput) {\\n                        pcityInput.setAttribute(\\&quot;readonly\\&quot;\, true);\\n                        pcityInput.style.backgroundColor = \\&quot;#f2f2f2\\&quot;;\\n                    }\\n\\n                    if (pstateInput) {\\n                        pstateInput.setAttribute(\\&quot;readonly\\&quot;\, true);\\n                        pstateInput.style.backgroundColor = \\&quot;#f2f2f2\\&quot;;\\n                    }\\n\\n                }\, 50);\\n\\n            } else {\\n\\n                if (pcityNode) {\\n                    pcityNode.value = \\&quot;\\&quot;;\\n                    pcityNode.enabled = true;\\n                }\\n\\n                if (pstateNode) {\\n                    pstateNode.value = \\&quot;\\&quot;;\\n                    pstateNode.enabled = true;\\n                }\\n\\n                setTimeout(() => {\\n\\n                    let pcityInput = document.querySelector(\\&quot;.permanantCity input\\&quot;);\\n                    let pstateInput = document.querySelector(\\&quot;.permanantState input\\&quot;);\\n\\n                    if (pcityInput) {\\n                        pcityInput.removeAttribute(\\&quot;readonly\\&quot;);\\n                        pcityInput.style.backgroundColor = \\&quot;\\&quot;;\\n                    }\\n\\n                    if (pstateInput) {\\n                        pstateInput.removeAttribute(\\&quot;readonly\\&quot;);\\n                        pstateInput.style.backgroundColor = \\&quot;\\&quot;;\\n                    }\\n\\n                }\, 50);\\n\\n            }\\n\\n        })\\n        .catch(error => {\\n            console.error(\\&quot;Pincode API Error:\\&quot;\, error);\\n        });\\n\\n});\\n  \\n  });&quot;\,&quot;event&quot;:&quot;Initialize&quot;\,&quot;field&quot;:&quot;guide.guideRootPanel.pnlPermanantAddress.permanantAddressPanel.permanantAddressPincode&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1\,&quot;enabled&quot;:true}]"
+                                            jcr:primaryType="nt:unstructured"/>
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidenumericbox>
+                                    <guidetextbox_1676270
+                                        cq:cssClass="guide-1780643318068"
+                                        jcr:created="{Date}2026-06-03T13:47:25.778+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T11:04:54.267+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="City"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/city"
+                                        css="permanantCity"
+                                        cssStyle=".guide-1780643318068 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643318068 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        enabled="{Boolean}true"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        name="permanantAddressCity"
+                                        textIsRich="[true,true,true]"
+                                        visible="{Boolean}true">
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox_1676270>
+                                    <guidetextbox
+                                        cq:cssClass="guide-1780643319996"
+                                        jcr:created="{Date}2026-06-03T13:50:25.905+05:30"
+                                        jcr:createdBy="admin"
+                                        jcr:lastModified="{Date}2026-06-04T11:05:11.337+05:30"
+                                        jcr:lastModifiedBy="admin"
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="State"
+                                        sling:resourceType="fd/af/components/guidetextbox"
+                                        autofillFieldKeyword="name"
+                                        bindRef="/credit_card_application/state"
+                                        css="permanantState"
+                                        cssStyle=".guide-1780643319996 .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart){&#xa;&#xa;}&#xa;.guide-1780643319996 label{&#xa;color:rgb(26,80,168);&#xa;font-weight:bold;&#xa;&#xa;}&#xa;"
+                                        enabled="{Boolean}true"
+                                        guideNodeClass="guideTextBox"
+                                        mandatory="true"
+                                        name="permanantAddressState"
+                                        textIsRich="[true,true,true]"
+                                        visible="{Boolean}true">
+                                        <style jcr:primaryType="nt:unstructured">
+                                            <af_textbox
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[]"/>
+                                            <af_fieldlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                default_x0023_default="[color:rgb(26\,80\,168),font-weight:bold]"/>
+                                        </style>
+                                    </guidetextbox>
+                                </items>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_responsivepanel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[background:rgba(201\,221\,245\,0.7),border-top-left-radius:30px,border-bottom-left-radius:30px,border-bottom-right-radius:30px,border-top-right-radius:30px,padding-top:11px,padding-bottom:11px,padding-left:11px,padding-right:11px]"
+                                        default_x0023_default_x0023_ui="[backgroundColor:rgba(201\,221\,245\,0.7),borderRadiusPopover:30px,paddingPopover:11px]"/>
+                                </style>
+                            </panel>
+                        </items>
+                    </panel_1069387186_cop>
+                    <panel_1607027627
+                        jcr:created="{Date}2026-06-03T13:51:42.465+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-03T13:52:13.976+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Consent"
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        name="pnlConsent"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidecheckbox
+                                cq:cssClass="guide-1780643623035"
+                                jcr:created="{Date}2026-06-03T13:52:21.361+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-04T10:28:05.928+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidecheckbox"
+                                alignment="guideFieldHorizontalAlignment"
+                                bindRef="/credit_card_application/consent_given"
+                                cssStyle=".guide-1780643623035 .afCheckBoxItem{&#xa;color:#1a50a8;&#xa;font-weight:bold;&#xa;&#xa;}&#xa;.guide-1780643623035 .afCheckBoxItem .guideWidgetLabel label{&#xa;color:#1a50a8;&#xa;&#xa;}&#xa;"
+                                enabled="{Boolean}true"
+                                guideNodeClass="guideCheckBox"
+                                mandatory="true"
+                                name="consentCheckbox"
+                                options="[I understand and hereby give my consent to use bureau details and information provided by me and/or information already held by HDFC Bank (if any) to evaluate my eligibility. I agree to the Terms &amp; Conditions set by the Bank.]"
+                                textIsRich="[true,true]"
+                                visible="{Boolean}true">
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_checkboxitem
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#1a50a8,font-weight:bold]"/>
+                                    <af_checkboxlabel
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[color:#1a50a8]"/>
+                                </style>
+                            </guidecheckbox>
+                        </items>
+                    </panel_1607027627>
+                    <panel_449143624
+                        jcr:created="{Date}2026-06-05T14:14:10.000+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-05T14:19:49.000+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Toggle"
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        name="toggle"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidetextdraw
+                                jcr:created="{Date}2026-06-05T14:20:36.893+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T14:21:05.046+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>FOR BANK'S USE ONLY&lt;/p>&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="bankUseOnly"
+                                textIsRich="true"/>
+                            <guidetextdraw_183824
+                                jcr:created="{Date}2026-06-05T14:23:07.379+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T14:24:32.355+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guidetextdraw"
+                                _value="&lt;p>I am being assisted by HDFC Bank Employee&lt;/p>&#xa;"
+                                guideNodeClass="guideTextDraw"
+                                name="bankUseOnlySwitchText"
+                                textIsRich="true">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="0"
+                                        width="4"/>
+                                </cq:responsive>
+                            </guidetextdraw_183824>
+                            <guideswitch
+                                jcr:created="{Date}2026-06-05T14:22:09.301+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T15:15:24.384+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="fd/af/components/guideswitch"
+                                guideNodeClass="guideSwitch"
+                                name="channelSwitch"
+                                options="[1=On,0=Off]"
+                                textIsRich="[true,true]">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="6"
+                                        width="2"/>
+                                </cq:responsive>
+                            </guideswitch>
+                        </items>
+                    </panel_449143624>
+                    <panel_1588270656
+                        jcr:created="{Date}2026-06-05T14:48:20.073+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-05T14:48:57.461+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Channel Details"
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        name="channelDetailsPanel"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false"
+                        visible="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidedropdownlist
+                                jcr:created="{Date}2026-06-05T14:49:32.633+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T14:49:47.564+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Sales Channel"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                guideNodeClass="guideDropDownList"
+                                name="salesChannel"
+                                textIsRich="[true,true]"/>
+                            <guidetextbox
+                                jcr:created="{Date}2026-06-05T14:50:14.297+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T14:57:28.380+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Branch Code"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="branchCode"
+                                textIsRich="[true,true,true]"
+                                visible="{Boolean}false"/>
+                            <guidetextbox_705600793
+                                jcr:created="{Date}2026-06-05T14:50:47.753+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T14:57:13.292+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="LG Code"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="lgCode"
+                                textIsRich="[true,true,true]"
+                                visible="{Boolean}false"/>
+                            <guidetextbox_1295172500
+                                jcr:created="{Date}2026-06-05T14:51:17.105+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T14:57:06.071+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="SM Code"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="smCode"
+                                textIsRich="[true,true,true]"
+                                visible="{Boolean}false"/>
+                            <guidetextbox_928936360
+                                jcr:created="{Date}2026-06-05T14:56:24.463+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T14:56:55.255+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="RM Code"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="rmCode"
+                                textIsRich="[true,true,true]"
+                                visible="{Boolean}false"/>
+                            <guidetextbox_1489588715
+                                jcr:created="{Date}2026-06-05T15:00:17.216+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T15:00:40.113+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="SE Code"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="seCode"
+                                textIsRich="[true,true,true]"
+                                visible="{Boolean}false"/>
+                            <guidedropdownlist_1516936418
+                                jcr:created="{Date}2026-06-05T15:01:06.256+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T15:04:39.303+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Sales Promo Code"
+                                sling:resourceType="fd/af/components/guidedropdownlist"
+                                guideNodeClass="guideDropDownList"
+                                name="salesPromoCode"
+                                options="[GOLDEN EDGE,NORMAL SCHEME,PL SAL ELITE GOLD_VCIP,PL SAL BT EXPL_VCIP,Balance Transfer]"
+                                textIsRich="[true,true]"
+                                visible="{Boolean}false"/>
+                            <guidetextbox_495589186
+                                jcr:created="{Date}2026-06-05T15:06:18.297+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T15:06:29.397+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="TSE Code"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="tseCode"
+                                textIsRich="[true,true,true]"/>
+                            <guidetextbox_1414916025
+                                jcr:created="{Date}2026-06-05T15:06:46.688+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T15:06:59.230+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="CRM Number"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="crmNumber"
+                                textIsRich="[true,true,true]"/>
+                            <guidetextbox_980340702
+                                jcr:created="{Date}2026-06-05T15:08:27.407+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T15:08:41.275+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Agent Code ( Broker ID)"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="agentcode"
+                                textIsRich="[true,true,true]"
+                                visible="{Boolean}false"/>
+                            <guidetextbox_995085473
+                                jcr:created="{Date}2026-06-05T15:08:46.639+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-05T15:09:07.638+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="LC"
+                                sling:resourceType="fd/af/components/guidetextbox"
+                                autofillFieldKeyword="name"
+                                guideNodeClass="guideTextBox"
+                                name="lcCode"
+                                textIsRich="[true,true,true]"/>
+                        </items>
+                    </panel_1588270656>
+                    <panel_1791394353
+                        jcr:created="{Date}2026-06-03T13:54:50.074+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2026-06-03T13:55:27.934+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Action "
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        name="pnlActions"
+                        textIsRich="true"
+                        validateOnStepCompletion="{Boolean}false">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                            columns="1"
+                            nonNavigable="{Boolean}true"
+                            toolbarPosition="Bottom"/>
+                        <items
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/gridFluidLayout2">
+                            <guidebutton
+                                cq:cssClass="guide-1780642478074"
+                                jcr:created="{Date}2026-06-03T13:56:18.832+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-04T10:34:54.400+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Check for Offers"
+                                sling:resourceType="fd/af/components/actions/submit"
+                                bindRef="/credit_card_application"
+                                cssStyle=".guide-1780642478074 button.submit:not(.af-icon-button){&#xa;background:rgb(84,185,132);&#xa;&#xa;}&#xa;"
+                                dorExclusion="true"
+                                guideNodeClass="guideButton"
+                                name="btnCheckOffers"
+                                textIsRich="[true,true]"
+                                type="submit">
+                                <fd:rules
+                                    fd:click="[{&quot;nodeName&quot;:&quot;ROOT&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_SCRIPTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;EVENT_CONDITION&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;COMPONENT&quot;\,&quot;value&quot;:{&quot;id&quot;:&quot;XX&quot;\,&quot;type&quot;:&quot;BUTTON&quot;\,&quot;name&quot;:&quot;XX&quot;}}\,{&quot;nodeName&quot;:&quot;EVENT_AND_COMPARISON_OPERATOR&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;is clicked&quot;\,&quot;value&quot;:null}}\,{&quot;nodeName&quot;:&quot;PRIMITIVE_EXPRESSION&quot;\,&quot;choice&quot;:null}]}\,&quot;nested&quot;:false}\,{&quot;nodeName&quot;:&quot;Then&quot;\,&quot;value&quot;:null}\,{&quot;nodeName&quot;:&quot;BLOCK_STATEMENTS&quot;\,&quot;items&quot;:[{&quot;nodeName&quot;:&quot;BLOCK_STATEMENT&quot;\,&quot;choice&quot;:{&quot;nodeName&quot;:&quot;SUBMIT_FORM&quot;\,&quot;items&quot;:[]}}]}]}}]\,&quot;isValid&quot;:true\,&quot;enabled&quot;:true\,&quot;version&quot;:1\,&quot;script&quot;:&quot;/**\\n\\n * This is a machine-generated code for the rule.\\n * If you modify it in the code editor\, you will not be able to view and edit the rule in the visual editor.\\n */\\n\\nguideBridge.submit();\\n\\n&quot;\,&quot;eventName&quot;:&quot;Click&quot;}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <style jcr:primaryType="nt:unstructured">
+                                    <af_submitbutton
+                                        jcr:primaryType="nt:unstructured"
+                                        default_x0023_default="[background:rgb(84\,185\,132)]"
+                                        default_x0023_default_x0023_ui="[backgroundColor:rgb(84\,185\,132)]"/>
+                                </style>
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="5"
+                                        width="7"/>
+                                </cq:responsive>
+                            </guidebutton>
+                            <guidebutton_1644291243
+                                jcr:created="{Date}2026-06-03T13:57:19.225+05:30"
+                                jcr:createdBy="admin"
+                                jcr:lastModified="{Date}2026-06-03T13:57:37.100+05:30"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Save for later"
+                                sling:resourceType="fd/af/components/guidebutton"
+                                dorExclusion="true"
+                                guideNodeClass="guideButton"
+                                name="btnSaveLater"
+                                textIsRich="[true,true]"
+                                type="Button">
+                                <cq:responsive jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        offset="10"
+                                        width="2"/>
+                                </cq:responsive>
+                            </guidebutton_1644291243>
+                        </items>
+                    </panel_1791394353>
+                </items>
+            </rootPanel>
+            <autoSaveInfo
+                jcr:primaryType="nt:unstructured"
+                metadataselector="global"/>
+            <signerInfo
+                jcr:primaryType="nt:unstructured"
+                firstSignerFormFiller="false"
+                workflowType="SEQUENTIAL">
+                <signer0
+                    jcr:primaryType="nt:unstructured"
+                    countryCode="undefined"
+                    countryCodeSource="undefined"
+                    email="undefined"
+                    emailSource="undefined"
+                    phone="undefined"
+                    phoneSource="undefined"
+                    securityOption="undefined"
+                    signerTitle="Signer One"/>
+            </signerInfo>
+        </guideContainer>
+    </jcr:content>
+</jcr:root>

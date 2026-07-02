@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="dam:Asset">
+    <jcr:content
+        cq:conf="/conf/hdfc"
+        jcr:lastModified="{Date}2026-06-05T11:28:55.976+05:30"
+        jcr:primaryType="dam:AssetContent"
+        sling:resourceType="fd/fm/fdm/render"
+        type="formdatamodel">
+        <metadata
+            jcr:primaryType="nt:unstructured"
+            author="admin"
+            title="Hdfc form data model"
+            uiModel="\{&quot;models&quot;:{&quot;credit_card_application&quot;:{&quot;x&quot;:40,&quot;y&quot;:80}}}"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/hdfcforms/clientlibs"/>
+    <filter root="/apps/hdfcforms/components"/>
+    <filter root="/apps/hdfcforms/i18n"/>
+    <filter root="/apps/fd/af/theme-clientlibs" mode="merge"/>
+
+</workspaceFilter>

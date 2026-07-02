@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="de"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder"
+    sling:basename="/content/forms/af/reference-fragments/employment-history/jcr:content/guideContainer/assets/dictionary">
+    <fd_Day
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Day"
+        sling:message="Tag"/>
+    <fd_DD
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_DD"
+        sling:message="DD"/>
+    <fd_Designatio-1994755277
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Designation*"
+        sling:message="Bezeichnung*"/>
+    <fd_Designatio766937047
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Designation"
+        sling:message="Bezeichnung"/>
+    <fd_Employemen-950704857
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Employement start date can not be in future"
+        sling:message="Eintrittsdatum für Beschäftigung kann nicht in der Zukunft liegen"/>
+    <fd_Employment-671866360
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Employment end date can not be before start date."
+        sling:message="Enddatum der Beschäftigung kann nicht vor Startdatum liegen"/>
+    <fd_Employment1261837029
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Employment detail"
+        sling:message="Angaben zu Beschäftigung"/>
+    <fd_Employment1496108128
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Employment History"
+        sling:message="Beschäftigungsverlauf"/>
+    <fd_Employment759532793
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Employment detail list"
+        sling:message="Liste mit Angaben zur Beschäftigung"/>
+    <fd_Enter_x0020_prev1676559774
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Enter previous job details"
+        sling:message="Geben Sie Informationen zu vorherigen Arbeitsplätzen an"/>
+    <fd_From_x0025_2A
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_From*"
+        sling:message="Von*"/>
+    <fd_MM
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_MM"
+        sling:message="MM"/>
+    <fd_Month
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Month"
+        sling:message="Monat"/>
+    <fd_No
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_No"
+        sling:message="Nein"/>
+    <fd_Organizati-1266088648
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Organization name"
+        sling:message="Name des Unternehmens"/>
+    <fd_Organizati-594042382
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Organization name*"
+        sling:message="Name des Unternehmens*"/>
+    <fd_This_x0020_is_x0020_a_x0020_1257895596
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_This is a required field"
+        sling:message="Dieses Feld ist erforderlich."/>
+    <fd_To_x0025_2A
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_To*"
+        sling:message="Bis*"/>
+    <fd_Year
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Year"
+        sling:message="Jahr"/>
+    <fd_Yes
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Yes"
+        sling:message="Ja"/>
+    <fd_YYYY
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_YYYY"
+        sling:message="YYYY"/>
+</jcr:root>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/fd/af/default"
+        cq:deviceGroups="mobile/groups/responsive"
+        cq:template="/libs/fd/af/templateForFragment/defaultFragmentTemplate"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Name"
+        sling:resourceType="fd/af/components/page/basePageForFragment">
+        <guideContainer
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="fd/af/components/guideFragmentContainer"
+            guideCss="guideContainer"
+            guideNodeClass="guideContainerNode"
+            name="fragment1">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/layouts/defaultGuideLayout"
+                toolbarPosition="Bottom"/>
+            <rootPanel
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/components/rootPanel"
+                guideNodeClass="rootPanelNode"
+                name="guideRootPanel"
+                panelSetType="Navigable">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                    nonNavigable="true"
+                    toolbarPosition="Bottom"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Title*"
+                        sling:resourceType="fd/af/components/guidedropdownlist"
+                        guideNodeClass="guideDropDownList"
+                        mandatory="true"
+                        mandatoryMessage="Selection is required"
+                        name="title"
+                        options="[mr=Mr.,mrs=Mrs.,ms=Miss.,dr=Dr.]"
+                        placeholderText="Select"
+                        textIsRich="[true,true]"/>
+                    <firstName
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="First name*"
+                        sling:resourceType="fd/af/components/guidetextbox"
+                        displayPatternType="none"
+                        guideNodeClass="guideTextBox"
+                        mandatory="true"
+                        mandatoryMessage="First name is a required field"
+                        name="firstName"
+                        placeholderText="First name"
+                        textIsRich="[true,true]"
+                        validationPatternType="none"/>
+                    <middleName
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Middle name"
+                        sling:resourceType="fd/af/components/guidetextbox"
+                        displayPatternType="none"
+                        guideNodeClass="guideTextBox"
+                        name="middleName"
+                        placeholderText="Middle name"
+                        textIsRich="[true,true]"
+                        validationPatternType="none"/>
+                    <lastName
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Last name*"
+                        sling:resourceType="fd/af/components/guidetextbox"
+                        displayPatternType="none"
+                        guideNodeClass="guideTextBox"
+                        mandatory="true"
+                        mandatoryMessage="Last name is a required field"
+                        name="lastName"
+                        placeholderText="Last name"
+                        textIsRich="[true,true]"
+                        validationPatternType="none"/>
+                </items>
+            </rootPanel>
+            <assets jcr:primaryType="nt:unstructured">
+                <dictionary jcr:primaryType="nt:unstructured">
+                    <de/>
+                    <es/>
+                    <fr/>
+                </dictionary>
+            </assets>
+        </guideContainer>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <smallScreen
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Decimal}479"/>
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Phone"
+                    width="{Decimal}767"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Decimal}991"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

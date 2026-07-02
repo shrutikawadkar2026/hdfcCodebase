@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="de"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder"
+    sling:basename="/content/forms/af/reference-fragments/current-employment/jcr:content/guideContainer/assets/dictionary">
+    <fd_Agriculture
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Agriculture"
+        sling:message="Landwirtschaft"/>
+    <fd_Business
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Business"
+        sling:message="Handel"/>
+    <fd_Computers_x0020__x0026__x0020_Technology
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Computers &amp; Technology"
+        sling:message="IT und Technik"/>
+    <fd_Construction
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Construction"
+        sling:message="Konstruktion"/>
+    <fd_Current_x0020_Em-113843917
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Current Employment"
+        sling:message="Derzeitige Beschäftigung"/>
+    <fd_Date_x0020_of_x0020_jo-2138263763
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Date of joining can not be in future for current employment"
+        sling:message="Eintrittsdatum für derzeitige Beschäftigung kann nicht in der Zukunft liegen"/>
+    <fd_Date_x0020_of_x0020_jo-2139088574
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Date of joining at current organization*"
+        sling:message="Eintrittsdatum in aktuellem Unternehmen"/>
+    <fd_Day
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Day"
+        sling:message="Tag"/>
+    <fd_DD
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_DD"
+        sling:message="DD"/>
+    <fd_Designatio-1994755277
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Designation*"
+        sling:message="Bezeichnung*"/>
+    <fd_Designatio766937047
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Designation"
+        sling:message="Bezeichnung"/>
+    <fd_Education
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Education"
+        sling:message="Bildung"/>
+    <fd_Employed
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Employed"
+        sling:message="Angestellt"/>
+    <fd_Employment1302363748
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Employment status*"
+        sling:message="Beschäftigungsstatus"/>
+    <fd_Engineering
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Engineering"
+        sling:message="Engineering"/>
+    <fd_Government
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Government"
+        sling:message="Regierung"/>
+    <fd_Health_x0020__x0026__x0020_Healthcare
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Health &amp; Healthcare"
+        sling:message="Gesundheitswesen"/>
+    <fd_Home_x0020_maker
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Home maker"
+        sling:message="Hausfrau/-mann"/>
+    <fd_Hospitality
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Hospitality"
+        sling:message="Bewirtung"/>
+    <fd_Industry_x0025_2A
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Industry*"
+        sling:message="Branche"/>
+    <fd_Law_x0020_Enforcement
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Law Enforcement"
+        sling:message="Gesetzesvollzug"/>
+    <fd_Management
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Management"
+        sling:message="Management"/>
+    <fd_Media
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Media"
+        sling:message="Medien"/>
+    <fd_Military
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Military"
+        sling:message="Militär"/>
+    <fd_MM
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_MM"
+        sling:message="MM"/>
+    <fd_Month
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Month"
+        sling:message="Monat"/>
+    <fd_Office_x0020_Administration
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Office Administration"
+        sling:message="Büroverwaltung"/>
+    <fd_Organizati-1266088648
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Organization name"
+        sling:message="Name des Unternehmens"/>
+    <fd_Organizati-594042382
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Organization name*"
+        sling:message="Name des Unternehmens*"/>
+    <fd_Other
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Other"
+        sling:message="Sonstige"/>
+    <fd_Production
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Production"
+        sling:message="Produktion"/>
+    <fd_Professional
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Professional"
+        sling:message="Berufstätig"/>
+    <fd_Psychology
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Psychology"
+        sling:message="Psychologie"/>
+    <fd_Retired
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Retired"
+        sling:message="Im Ruhestand"/>
+    <fd_Sales
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Sales"
+        sling:message="Verkauf"/>
+    <fd_Science
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Science"
+        sling:message="Wissenschaft"/>
+    <fd_Select
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Select"
+        sling:message="Auswählen"/>
+    <fd_Selection_x0020_-1371625183
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Selection is required"
+        sling:message="Auswahl ist erforderlich."/>
+    <fd_Self-employed
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Self-employed"
+        sling:message="Selbständig"/>
+    <fd_Student
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Student"
+        sling:message="Student"/>
+    <fd_This_x0020_is_x0020_a_x0020_1257895596
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_This is a required field"
+        sling:message="Dieses Feld ist erforderlich."/>
+    <fd_Transportation
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Transportation"
+        sling:message="Transportwesen"/>
+    <fd_Unemployed
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Unemployed"
+        sling:message="Arbeitslos"/>
+    <fd_Year
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_Year"
+        sling:message="Jahr"/>
+    <fd_YYYY
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="fd_YYYY"
+        sling:message="YYYY"/>
+</jcr:root>

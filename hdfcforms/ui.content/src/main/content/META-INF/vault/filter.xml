@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/hdfcforms" mode="merge"/>
+    <filter root="/content/hdfcforms" mode="merge"/>
+    <filter root="/content/dam/hdfcforms" mode="merge">
+        <exclude pattern="/content/dam/hdfcforms(/.*)?"/>
+        <include pattern="/content/dam/hdfcforms/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/hdfcforms/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/hdfcforms" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments-themes/hdfcforms" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments-fdm/hdfcforms" mode="merge"/>
+    <filter root="/content/dam/hdfcforms/sample_logo.png" mode="merge"/>
+    <filter root="/content/dam/hdfcforms/sample_terms.png" mode="merge"/>
+    <filter root="/content/dam/hdfcforms/wknd_logo.png" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments/college-registration-form" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments/hdfc" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments/reference-fragments" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments-fdm/college-registration-data-model" mode="merge"/>
+    <filter root="/content/dam/formsanddocuments-fdm/hdfc" mode="merge"/>
+    <filter root="/content/forms/af" mode="merge"/>
+
+</workspaceFilter>

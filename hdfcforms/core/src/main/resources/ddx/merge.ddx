@@ -1,0 +1,6 @@
+<DDX xmlns="http://ns.adobe.com/DDX/1.0/">
+    <PDF result="merged.pdf">
+        <PDF source="pdf1"/>
+        <PDF source="pdf2"/>
+    </PDF>
+</DDX>

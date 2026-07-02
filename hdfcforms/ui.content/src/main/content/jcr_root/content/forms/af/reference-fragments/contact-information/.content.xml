@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:fd="http://www.adobe.com/aemfd/fd/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/fd/af/default"
+        cq:deviceGroups="mobile/groups/responsive"
+        cq:template="/libs/fd/af/templateForFragment/defaultFragmentTemplate"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Contact Information"
+        sling:resourceType="fd/af/components/page/basePageForFragment">
+        <guideContainer
+            fd:version="1.1"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="fd/af/components/guideFragmentContainer"
+            guideCss="guideContainer"
+            guideNodeClass="guideContainerNode"
+            name="fragment1">
+            <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/layouts/defaultGuideLayout"
+                toolbarPosition="Bottom"/>
+            <rootPanel
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="fd/af/components/rootPanel"
+                guideNodeClass="rootPanelNode"
+                name="guideRootPanel"
+                panelSetType="Navigable">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                    nonNavigable="true"
+                    toolbarPosition="Bottom"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <contantInformationPanel
+                        jcr:description="Contact Information"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Contact Information"
+                        sling:resourceType="fd/af/components/panel"
+                        guideNodeClass="guidePanel"
+                        name="contantInformationPanel"
+                        textIsRich="true">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="fd/af/layouts/panel/accordion"
+                            enableLayoutOptimization="{Boolean}true"
+                            nonNavigable="false"
+                            toolbarPosition="Bottom"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <panel
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Contact person #"
+                                sling:resourceType="fd/af/components/panel"
+                                guideNodeClass="guidePanel"
+                                maxOccur="3"
+                                minOccur="1"
+                                name="contactDetailsInfo"
+                                summaryExpVisible="yes"
+                                textIsRich="true">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="fd/af/layouts/gridFluidLayout2"
+                                    enableLayoutOptimization="{Boolean}false"
+                                    nonNavigable="true"
+                                    toolbarPosition="Bottom"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <contactType
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Contact type"
+                                        sling:resourceType="fd/af/components/guidedropdownlist"
+                                        _value="Work"
+                                        guideNodeClass="guideDropDownList"
+                                        mandatory="true"
+                                        mandatoryMessage="Selection is required"
+                                        name="contactType"
+                                        options="[Work=Work,Home=Home,Mobile=Mobile]"
+                                        textIsRich="[true,true]"/>
+                                    <phoneNumber
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Phone number*"
+                                        sling:resourceType="fd/af/components/guidetelephone"
+                                        autofillFieldKeyword="tel"
+                                        displayPatternType="custom"
+                                        displayPictureClause="num{zzzzzzzzzzzzz}"
+                                        guideNodeClass="guideTelephone"
+                                        mandatory="true"
+                                        mandatoryMessage="This is a required field"
+                                        name="phoneNumber"
+                                        placeholderText="eg: 123-456-7890"
+                                        textIsRich="[true,true]"
+                                        validatePictureClauseMessage="Phone number should not be more than 10 digits."/>
+                                    <emailAddress
+                                        jcr:primaryType="nt:unstructured"
+                                        jcr:title="Email address"
+                                        sling:resourceType="fd/af/components/guideemail"
+                                        autofillFieldKeyword="email"
+                                        displayPatternType="custom"
+                                        displayPictureClause="text{OOOOOOOOOOOOOOOOOO'@example.com'}"
+                                        guideNodeClass="guideTextBox"
+                                        name="emailAddress"
+                                        placeholderText="abc@example.com"
+                                        textIsRich="[true,true]"
+                                        validatePictureClause="^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$"
+                                        validationPatternType="none"/>
+                                </items>
+                                <fd:scripts
+                                    fd:summary="[{&quot;script&quot;:{&quot;field&quot;:&quot;FORM.guideRootPanel.contantInformation.contactDetailsInfo&quot;\,&quot;event&quot;:&quot;Summary&quot;\,&quot;model&quot;:{&quot;nodeName&quot;:&quot;SUMMARY_EXPRESSION&quot;}\,&quot;content&quot;:&quot;\\&quot;Contact - \\&quot;+contactType.value&quot;}\,&quot;nodeName&quot;:&quot;SCRIPTMODEL&quot;\,&quot;version&quot;:1}]"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </panel>
+                        </items>
+                    </contantInformationPanel>
+                </items>
+            </rootPanel>
+            <assets jcr:primaryType="nt:unstructured">
+                <dictionary jcr:primaryType="nt:unstructured">
+                    <fr/>
+                    <es/>
+                    <de/>
+                </dictionary>
+            </assets>
+        </guideContainer>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <smallScreen
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Decimal}479"/>
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Phone"
+                    width="{Decimal}767"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Decimal}991"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>
